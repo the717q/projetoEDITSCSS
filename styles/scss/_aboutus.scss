@@ -1,0 +1,285 @@
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+main #header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("assets/aboutusheader.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.mainmenu-2 #pesquisar {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.mainmenu-2 label {
+  padding: 10px;
+}
+
+.mainmenu-2 label:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+main #header #block {
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+main #header #block h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+main #header #block h1 span {
+  color: hsla(240, 100%, 20%, 1);
+}
+
+main #header #block img {
+  width: 20%;
+}
+
+main #header #block p {
+  color: white;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  margin: 2% 0%;
+  background-color: hsla(240, 100%, 20%, 1);
+}
+
+span {
+  color: hsla(240, 100%, 20%, 1);
+}
+
+#avaliation {
+  display: inline-block;
+  width: 20%;
+  margin-right: 5%;
+  background-color: hsla(240, 100%, 80%, 0.6);
+  border-radius: 5%;
+  color: white;
+}
+
+#avaliation h2 {
+  color: hsl(0, 100%, 100%, 1);
+  text-align: center;
+  margin: 30px 30px 0px 30px;
+}
+
+#avaliation p {
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 30px 30px 30px;
+}
+
+#opinion1 {
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+  background-color: hsla(240, 100%, 80%, 0.6);
+  text-align: center;
+  border-radius: 5%;
+  height: 500px;
+}
+
+#opinionimg {
+  border: 10px solid white;
+  margin-top: 50px;
+}
+
+#opinion2 {
+  display: inline-block;
+  background-color: hsla(240, 100%, 80%, 0.6);
+  width: 30%;
+  text-align: center;
+  border-radius: 5%;
+  height: 500px;
+}
+
+#opinion1 h2,
+#opinion2 h2 {
+  font-size: 36px;
+  color: hsla(240, 100%, 20%, 1);
+}
+
+#opinion1 h3,
+#opinion2 h3 {
+  color: hsl(0, 100%, 100%, 1);
+}
+
+#opinion1 p,
+#opinion2 p {
+  line-height: 30px;
+  color: white;
+}
+
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.guarantees h4 {
+  background-color: hsla(240, 100%, 20%, 1);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+#guarantees h4:hover {
+  cursor: default;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 426px) {
+  main #header #block {
+    width: 80%;
+  }
+  .mainmenu {
+    width: 100%;
+  }
+
+  .mainmenu-2 {
+    display: none;
+  }
+
+  #section {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: unset;
+    height: unset;
+    margin: 2% 0%;
+    background-color: hsla(240, 100%, 20%, 1);
+  }
+
+  #avaliation {
+    display: inline-block;
+    width: 100%;
+    margin-right: unset;
+    background-color: hsla(240, 100%, 60%, 1);
+    border-radius: unset;
+    color: white;
+    text-align: center;
+  }
+
+  #opinion1 {
+    display: inline-block;
+    width: 100%;
+    margin-right: unset;
+    background-color: hsla(240, 100%, 60%, 1);
+    text-align: center;
+    border-radius: unset;
+    height: unset;
+  }
+
+  #opinion2 {
+    display: inline-block;
+    background-color: hsla(240, 100%, 60%, 1);
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+    height: unset;
+  }
+
+  .guarantees h4 {
+    padding: 15px;
+    margin-right: unset;
+  }
+}

@@ -1,0 +1,153 @@
+body {
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+#header-label1 {
+  justify-content: center;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+}
+
+#header-label1 h1 {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+#header-label1 h1:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+  cursor: default;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsla(240, 100%, 50%, 1);
+  cursor: grab;
+}
+
+.faq {
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
+
+.main-label2 {
+  text-align: center;
+  margin: 5% 0% 2% 0%;
+}
+
+.qanda {
+  margin: 4% 0% 4% 0%;
+  border-bottom: 1px solid black;
+}
+
+.qanda .question {
+  display: inline-block;
+}
+
+.qanda img {
+  vertical-align: middle;
+}
+
+.qanda .answer {
+  margin: 0%;
+  padding: 20px;
+}
+
+#asb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  float: right;
+  flex-wrap: wrap;
+}
+
+#asb img {
+  margin: 0px 0px 20px 0px;
+  width: 60%;
+  height: 400px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}

@@ -1,0 +1,1050 @@
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+main #header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("assets/aboutusheader.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.mainmenu-2 #pesquisar {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.mainmenu-2 label {
+  padding: 10px;
+}
+
+.mainmenu-2 label:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+main #header #block {
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+main #header #block h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+main #header #block h1 span {
+  color: hsl(240deg, 100%, 20%);
+}
+
+main #header #block img {
+  width: 20%;
+}
+
+main #header #block p {
+  color: white;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  margin: 2% 0%;
+  background-color: hsl(240deg, 100%, 20%);
+}
+
+span {
+  color: hsl(240deg, 100%, 20%);
+}
+
+#avaliation {
+  display: inline-block;
+  width: 20%;
+  margin-right: 5%;
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+  border-radius: 5%;
+  color: white;
+}
+
+#avaliation h2 {
+  color: hsl(0deg, 100%, 100%);
+  text-align: center;
+  margin: 30px 30px 0px 30px;
+}
+
+#avaliation p {
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 30px 30px 30px;
+}
+
+#opinion1 {
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+  text-align: center;
+  border-radius: 5%;
+  height: 500px;
+}
+
+#opinionimg {
+  border: 10px solid white;
+  margin-top: 50px;
+}
+
+#opinion2 {
+  display: inline-block;
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+  width: 30%;
+  text-align: center;
+  border-radius: 5%;
+  height: 500px;
+}
+
+#opinion1 h2,
+#opinion2 h2 {
+  font-size: 36px;
+  color: hsl(240deg, 100%, 20%);
+}
+
+#opinion1 h3,
+#opinion2 h3 {
+  color: hsl(0deg, 100%, 100%);
+}
+
+#opinion1 p,
+#opinion2 p {
+  line-height: 30px;
+  color: white;
+}
+
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.guarantees h4 {
+  background-color: hsl(240deg, 100%, 20%);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+#guarantees h4:hover {
+  cursor: default;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 426px) {
+  main #header #block {
+    width: 80%;
+  }
+
+  .mainmenu {
+    width: 100%;
+  }
+
+  .mainmenu-2 {
+    display: none;
+  }
+
+  #section {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: unset;
+    height: unset;
+    margin: 2% 0%;
+    background-color: hsl(240deg, 100%, 20%);
+  }
+
+  #avaliation {
+    display: inline-block;
+    width: 100%;
+    margin-right: unset;
+    background-color: hsl(240deg, 100%, 60%);
+    border-radius: unset;
+    color: white;
+    text-align: center;
+  }
+
+  #opinion1 {
+    display: inline-block;
+    width: 100%;
+    margin-right: unset;
+    background-color: hsl(240deg, 100%, 60%);
+    text-align: center;
+    border-radius: unset;
+    height: unset;
+  }
+
+  #opinion2 {
+    display: inline-block;
+    background-color: hsl(240deg, 100%, 60%);
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+    height: unset;
+  }
+
+  .guarantees h4 {
+    padding: 15px;
+    margin-right: unset;
+  }
+}
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mainmenu1 li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu1 a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+#header-label2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0% 1% 0%;
+}
+
+#header-label3 {
+  text-align: center;
+}
+
+#header-label3 h1 {
+  font-size: 1.5rem;
+}
+
+form h2,
+p {
+  color: white;
+}
+
+#main-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: block;
+  text-align: center;
+  background-color: hsl(240deg, 100%, 60%);
+  border: 1px groove black;
+  padding: 0px 15px 15px 15px;
+}
+
+.socialmedia img {
+  display: inlineblock;
+  height: 50px;
+  padding: 0% 1%;
+}
+
+body {
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+#header-label1 {
+  justify-content: center;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+}
+
+#header-label1 h1 {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+#header-label1 h1:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+  cursor: default;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(240deg, 100%, 50%);
+  cursor: grab;
+}
+
+.faq {
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
+
+.main-label2 {
+  text-align: center;
+  margin: 5% 0% 2% 0%;
+}
+
+.qanda {
+  margin: 4% 0% 4% 0%;
+  border-bottom: 1px solid black;
+}
+
+.qanda .question {
+  display: inline-block;
+}
+
+.qanda img {
+  vertical-align: middle;
+}
+
+.qanda .answer {
+  margin: 0%;
+  padding: 20px;
+}
+
+#asb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  float: right;
+  flex-wrap: wrap;
+}
+
+#asb img {
+  margin: 0px 0px 20px 0px;
+  width: 60%;
+  height: 400px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 0;
+}
+
+.mainmenu1 li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.mainmenu1 a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+main h1 {
+  margin-bottom: 0%;
+  font-size: 1.5rem;
+  margin: 2% 0% 1% 0%;
+}
+
+main h1:hover {
+  cursor: default;
+}
+
+main .userpass {
+  font-weight: 500;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+main p:hover {
+  cursor: default;
+}
+
+#label {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0%;
+}
+
+.loginform {
+  display: block;
+  text-align: center;
+  background-color: hsl(240deg, 100%, 60%);
+  padding: 20px;
+  border: 1px groove black;
+  margin-top: 20px;
+}
+
+.loginform .usernpass {
+  color: white;
+}
+
+#label2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#label2 h2 {
+  margin: 10px;
+  font-weight: 400;
+}
+
+#label2 a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+#label2 a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+.socialmedia img {
+  display: inlineblock;
+  height: 50px;
+  padding: 0% 1%;
+}
+
+@media only screen and (max-width: 766px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  #label2 {
+    font-size: 1rem;
+  }
+
+  footer h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.mainmenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+#header-label2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0% 1% 0%;
+}
+
+.header-label3 {
+  display: block;
+  text-align: center;
+}
+
+.header-label3 h1 {
+  margin: 20px 10px 20px 10px;
+  font-size: 1.5rem;
+}
+
+.header-label3 h1:hover {
+  cursor: default;
+}
+
+.header-label3 p {
+  font-size: 1rem;
+}
+
+.header-label3 img {
+  width: 40px;
+}
+
+.main-label1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+form {
+  padding: 0px 15px 15px 15px;
+  display: block;
+  text-align: center;
+  background-color: hsl(240deg, 100%, 60%);
+  border: 1px groove black;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+form .agree {
+  color: white;
+}
+
+form h2:hover {
+  cursor: default;
+}
+
+.socialmedia img {
+  display: inlineblock;
+  height: 50px;
+  padding: 0% 1%;
+}
+
+.footer {
+  margin: 5% 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  margin: 3% 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer footer img {
+  font-size: 1.5rem;
+}
+
+footer img {
+  width: 50px;
+  padding: 0% 1%;
+}
+
+#footer {
+  text-align: center;
+  margin: 3% 0%;
+}
+
+#footer h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.mainmenu-2 #pesquisar {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.mainmenu-2 label {
+  padding: 10px;
+}
+
+.mainmenu-2 label:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+.banner {
+  background-image: url("/assets/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.banner-label {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.banner-label a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px groove white;
+}
+
+.banner-label a:hover {
+  font-weight: 700;
+}
+
+.banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.banner-label2 {
+  width: 40%;
+  text-align: center;
+  height: 50%;
+}
+
+.banner-label2 h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.banner-label3 {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.banner-label3 h1 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: white;
+}
+
+.discover-out-products {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+
+.discover-out-products h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 8% auto;
+}
+
+.product3-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.product2-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.product1-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.productsanchor {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid blue;
+  transition: background-color 500ms linear, color 500ms linear;
+}
+
+.productsanchor:hover {
+  background-color: white;
+  color: blue;
+}
+
+.producth2 {
+  margin-bottom: 50px;
+}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 30px auto;
+  background-color: orange;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Shop {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 10px;
+  border: 1px solid blue;
+  transition: background-color 500ms linear, color 500ms linear;
+  width: 25%;
+  align-self: center;
+}
+
+.Shop:hover {
+  background-color: white;
+  color: blue;
+}
+
+/* Section above still needs to be made */
+footer {
+  margin-top: 50px;
+}
+
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.guarantees h4 {
+  background-color: hsl(240deg, 100%, 20%);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/*# sourceMappingURL=index.css.map */

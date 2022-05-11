@@ -1,0 +1,279 @@
+@import "variables.scss";
+@import "aboutus.scss";
+@import "contactus.scss";
+@import "faq.scss";
+@import "login.scss";
+@import "registar.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.mainmenu-2 #pesquisar {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.mainmenu-2 label {
+  padding: 10px;
+}
+
+.mainmenu-2 label:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.banner {
+  background-image: url("/assets/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.banner-label {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.banner-label a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px groove white;
+}
+
+.banner-label a:hover {
+  font-weight: 700;
+}
+
+.banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.banner-label2 {
+  width: 40%;
+  text-align: center;
+  height: 50%;
+}
+
+.banner-label2 h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.banner-label3 {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.banner-label3 h1 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: white;
+}
+
+.discover-out-products {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+
+.discover-out-products h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 8% auto;
+}
+
+.product3-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.product2-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.product1-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.productsanchor {
+  background-color: $brand-color;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid $brand-color;
+  transition: background-color 500ms linear, color 500ms linear;
+}
+
+.productsanchor:hover {
+  background-color: white;
+  color: $brand-color;
+}
+
+.producth2 {
+  margin-bottom: 50px;
+}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 30px auto;
+  background-color: orange;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Shop {
+  background-color: $brand-color;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 10px;
+  border: 1px solid $brand-color;
+  transition: background-color 500ms linear, color 500ms linear;
+  width: 25%;
+  align-self: center;
+}
+
+.Shop:hover {
+  background-color: white;
+  color: $brand-color;
+}
+
+/* Section above still needs to be made */
+
+footer {
+  margin-top: 50px;
+}
+
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.guarantees h4 {
+  background-color: hsla(240, 100%, 20%, 1);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: hsla(240, 100%, 50%, 1);
+}
