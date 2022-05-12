@@ -19,8 +19,8 @@ body {
 }
 
 .mainmenu1 li:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
 }
 
 .mainmenu1 li a {
@@ -29,41 +29,46 @@ body {
 }
 
 .mainmenu1 a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }
 
-#header-label2 {
+.header-label2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2% 0% 1% 0%;
 }
 
-#header-label3 {
+.header-label3 {
   text-align: center;
 }
 
-#header-label3 h1 {
+.header-label3 h1 {
   font-size: 1.5rem;
 }
 
-form h2,
-p {
-  color: white;
-}
-
-#main-label1 {
+.main-label1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form {
+.login-register-forms-label {
+  padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
   background-color: hsla(240, 100%, 60%, 1);
   border: 1px groove black;
-  padding: 0px 15px 15px 15px;
+}
+
+.login-register-forms-label .h2-form {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.login-register-forms-label p {
+  color: white;
 }
 
 .socialmedia img {

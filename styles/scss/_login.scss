@@ -20,8 +20,8 @@ body {
 }
 
 .mainmenu1 li:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
 }
 
 .mainmenu1 li a {
@@ -31,24 +31,29 @@ body {
 }
 
 .mainmenu1 a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }
 
-main h1 {
+.loginmain {
+  margin: 5% 0% 5% 0%;
+}
+
+
+.loginmain h1 {
   margin-bottom: 0%;
   font-size: 1.5rem;
   margin: 2% 0% 1% 0%;
 }
 
-main h1:hover {
+.loginmain h1:hover {
   cursor: default;
 }
 
-main .userpass {
+.loginmain .userpass {
   font-weight: 500;
 }
 
-main p {
+.loginmain p {
   font-size: 1.2rem;
   margin-top: 50px;
 }
@@ -57,7 +62,7 @@ main p:hover {
   cursor: default;
 }
 
-#label {
+.label1 {
   display: flex;
   justify-content: center;
   margin: 2% 0%;
@@ -66,7 +71,7 @@ main p:hover {
 .loginform {
   display: block;
   text-align: center;
-  background-color: hsla(240, 100%, 60%, 1);
+  background-color: $blue;
   padding: 20px;
   border: 1px groove black;
   margin-top: 20px;
@@ -92,7 +97,7 @@ main p:hover {
 }
 
 #label2 a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }
 
   .socialmedia img {
