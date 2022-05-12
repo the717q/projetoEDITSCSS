@@ -29,8 +29,8 @@ ul {
 }
 
 .mainmenu li:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
 }
 
 .mainmenu li a {
@@ -39,7 +39,7 @@ ul {
 }
 
 .mainmenu a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }
 
 #header-label1 {
@@ -55,8 +55,8 @@ ul {
 }
 
 #header-label1 h1:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
   cursor: default;
 }
 
@@ -70,7 +70,7 @@ ul li a {
 }
 
 a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
   cursor: grab;
 }
 
@@ -139,8 +139,8 @@ footer {
 }
 
 .submenu li:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
 }
 
 .submenu li a {
@@ -149,5 +149,5 @@ footer {
 }
 
 .submenu a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }

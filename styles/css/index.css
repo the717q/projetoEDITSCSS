@@ -31,6 +31,7 @@ body {
 .mainmenu li a {
   text-decoration: none;
   color: black;
+  font-size: 16px;
 }
 
 .mainmenu a:hover {
@@ -253,7 +254,7 @@ span {
     display: inline-block;
     width: 100%;
     margin-right: unset;
-    background-color: hsl(240deg, 100%, 60%);
+    background-color: hsl(240deg, 100%, 50%);
     border-radius: unset;
     color: white;
     text-align: center;
@@ -263,7 +264,7 @@ span {
     display: inline-block;
     width: 100%;
     margin-right: unset;
-    background-color: hsl(240deg, 100%, 60%);
+    background-color: hsl(240deg, 100%, 50%);
     text-align: center;
     border-radius: unset;
     height: unset;
@@ -271,7 +272,7 @@ span {
 
   #opinion2 {
     display: inline-block;
-    background-color: hsl(240deg, 100%, 60%);
+    background-color: hsl(240deg, 100%, 50%);
     width: 100%;
     text-align: center;
     border-radius: unset;
@@ -317,38 +318,43 @@ body {
   color: hsl(240deg, 100%, 50%);
 }
 
-#header-label2 {
+.header-label2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2% 0% 1% 0%;
 }
 
-#header-label3 {
+.header-label3 {
   text-align: center;
 }
 
-#header-label3 h1 {
+.header-label3 h1 {
   font-size: 1.5rem;
 }
 
-form h2,
-p {
-  color: white;
-}
-
-#main-label1 {
+.main-label1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form {
+.login-register-forms-label {
+  padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
   background-color: hsl(240deg, 100%, 60%);
   border: 1px groove black;
-  padding: 0px 15px 15px 15px;
+}
+
+.login-register-forms-label .h2-form {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.login-register-forms-label p {
+  color: white;
 }
 
 .socialmedia img {
@@ -547,21 +553,25 @@ body {
   color: hsl(240deg, 100%, 50%);
 }
 
-main h1 {
+.loginmain {
+  margin: 5% 0% 5% 0%;
+}
+
+.loginmain h1 {
   margin-bottom: 0%;
   font-size: 1.5rem;
   margin: 2% 0% 1% 0%;
 }
 
-main h1:hover {
+.loginmain h1:hover {
   cursor: default;
 }
 
-main .userpass {
+.loginmain .userpass {
   font-weight: 500;
 }
 
-main p {
+.loginmain p {
   font-size: 1.2rem;
   margin-top: 50px;
 }
@@ -570,7 +580,7 @@ main p:hover {
   cursor: default;
 }
 
-#label {
+.label1 {
   display: flex;
   justify-content: center;
   margin: 2% 0%;
@@ -579,7 +589,7 @@ main p:hover {
 .loginform {
   display: block;
   text-align: center;
-  background-color: hsl(240deg, 100%, 60%);
+  background-color: hsl(240deg, 100%, 50%);
   padding: 20px;
   border: 1px groove black;
   margin-top: 20px;
@@ -709,7 +719,7 @@ body {
   justify-content: center;
 }
 
-form {
+.login-register-forms-label {
   padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
@@ -717,7 +727,7 @@ form {
   border: 1px groove black;
 }
 
-form h2 {
+login-register-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
@@ -813,6 +823,7 @@ body {
 .mainmenu li a {
   text-decoration: none;
   color: black;
+  font-size: 16px;
 }
 
 .mainmenu a:hover {
@@ -940,19 +951,19 @@ body {
 }
 
 .productsanchor {
-  background-color: blue;
+  background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: 10px 30px;
-  border: 1px solid blue;
+  border: 1px solid hsl(240deg, 100%, 50%);
   transition: background-color 500ms linear, color 500ms linear;
 }
 
 .productsanchor:hover {
   background-color: white;
-  color: blue;
+  color: hsl(240deg, 100%, 50%);
 }
 
 .producth2 {
@@ -978,13 +989,13 @@ body {
 }
 
 .Shop {
-  background-color: blue;
+  background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: 10px 10px;
-  border: 1px solid blue;
+  border: 1px solid hsl(240deg, 100%, 50%);
   transition: background-color 500ms linear, color 500ms linear;
   width: 25%;
   align-self: center;
@@ -992,7 +1003,7 @@ body {
 
 .Shop:hover {
   background-color: white;
-  color: blue;
+  color: hsl(240deg, 100%, 50%);
 }
 
 /* Section above still needs to be made */

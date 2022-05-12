@@ -18,8 +18,8 @@ body {
 }
 
 .mainmenu li:hover {
-  border-bottom: 1px solid hsla(240, 100%, 50%, 1);
-  color: hsla(240, 100%, 50%, 1);
+  border-bottom: 1px solid $blue;
+  color: $blue;
 }
 
 .mainmenu li a {
@@ -29,7 +29,7 @@ body {
 }
 
 .mainmenu a:hover {
-  color: hsla(240, 100%, 50%, 1);
+  color: $blue;
 }
 
 #header-label2 {
@@ -67,7 +67,7 @@ body {
   justify-content: center;
 }
 
-form {
+.login-register-forms-label {
   padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
@@ -75,7 +75,7 @@ form {
   border: 1px groove black;
 }
 
-form h2 {
+login-register-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
