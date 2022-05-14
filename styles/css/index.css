@@ -43,7 +43,7 @@ main #header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url("assets/aboutusheader.jpg");
+  background-image: url("../../assets/aboutusheader.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -855,7 +855,7 @@ body {
 }
 
 .banner {
-  background-image: url("/assets/header.jpg");
+  background-image: url("../../assets/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
