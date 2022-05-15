@@ -1,3 +1,5 @@
+/* Footer of the login, registar and contact us pages */
+
 .footer {
   margin: 5% 0%;
   left: 0;
@@ -18,21 +20,73 @@
   width: 100%;
 }
 
-footer footer img {
-  font-size: 1.5rem;
-}
-
 footer img {
   width: 50px;
   padding: 0% 1%;
 }
 
-#footer {
-  text-align: center;
-  margin: 3% 0%;
+footer {
+  margin-top: 50px;
 }
 
-#footer h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
+
+/* ----------------------------------------------------- */
+
+/* footer of the pages index and aboutus */
+
+
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.guarantees h4 {
+  background-color: $darkblue;
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.submenu li:hover {
+  border-bottom: 1px solid $blue;
+  color: $blue;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu a:hover {
+  color: $blue;
+}
+
+
+@media only screen and (max-width: 426px) {
+
+  
+  .guarantees {
+    display: unset;
+  }
 }

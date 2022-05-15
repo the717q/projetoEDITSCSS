@@ -1,41 +1,6 @@
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-}
-
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  margin-right:0;
-}
-
-.mainmenu1 li:hover {
-  border-bottom: 1px solid $blue;
-  color: $blue;
-}
-
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
-.mainmenu1 a:hover {
-  color: $blue;
-}
-
 .loginmain {
   margin: 5% 0% 5% 0%;
+  text-align: center;
 }
 
 
@@ -81,22 +46,22 @@ main p:hover {
   color: white;
 }
 
-#label2 {
+.label2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-#label2 h2 {
+.label2 h2 {
   margin: 10px;
   font-weight: 400;
 }
 
-#label2 a {
+.label2 a {
   color: black;
   font-size: 1.5rem;
 }
 
-#label2 a:hover {
+.label2 a:hover {
   color: $blue;
 }
 
@@ -122,12 +87,8 @@ main p:hover {
   header p {
     font-size: 1.5rem;
   }
-  #label2 {
+  .label2 {
     font-size: 1rem;
   }
 
-  footer h2 {
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
 }
