@@ -1,36 +1,3 @@
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-
-.mainmenu1 li:hover {
-  border-bottom: 1px solid $blue;
-  color: $blue;
-}
-
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-}
-
-.mainmenu1 a:hover {
-  color: $blue;
-}
 
 .header-label2 {
   display: flex;

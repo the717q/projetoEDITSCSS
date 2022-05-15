@@ -1,44 +1,6 @@
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.logo {
-  width: 50px;
-}
-
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 70%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.mainmenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-main #header {
+/* Major colors used on the project */
+/* Main content of the page */
+main .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,62 +10,42 @@ main #header {
   background-size: cover;
 }
 
-.mainmenu-2 {
-  width: 29%;
-  text-align: center;
-  display: inline-block;
-  padding-left: 0;
-}
-
-.mainmenu-2 #pesquisar {
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.mainmenu-2 label {
-  padding: 10px;
-}
-
-.mainmenu-2 label:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-}
-
 .mainmenu-2 .pesquisar-label:hover {
   color: hsl(240deg, 100%, 50%);
 }
 
-main #header #block {
+main .header .block {
   display: block;
   width: 50%;
   text-align: center;
 }
 
-main #header #block h1 {
+main .header .block h1 {
   color: white;
   text-transform: uppercase;
   font-size: 48px;
 }
 
-main #header #block h1 span {
+main .header .block h1 span {
   color: hsl(240deg, 100%, 20%);
 }
 
-main #header #block img {
+main .header .block img {
   width: 20%;
 }
 
-main #header #block p {
+main .header .block p {
   color: white;
   line-height: 40px;
   font-size: 24px;
 }
 
-#section {
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 800px;
+  padding: 10% 0%;
   margin: 2% 0%;
   background-color: hsl(240deg, 100%, 20%);
 }
@@ -112,8 +54,7 @@ span {
   color: hsl(240deg, 100%, 20%);
 }
 
-#avaliation {
-  display: inline-block;
+.avaliation {
   width: 20%;
   margin-right: 5%;
   background-color: hsla(240deg, 100%, 80%, 0.6);
@@ -121,115 +62,73 @@ span {
   color: white;
 }
 
-#avaliation h2 {
+.avaliation h2 {
   color: hsl(0deg, 100%, 100%);
   text-align: center;
   margin: 30px 30px 0px 30px;
 }
 
-#avaliation p {
+.avaliation p {
   color: white;
   line-height: 20px;
   text-align: center;
   margin: 10px 30px 30px 30px;
 }
 
-#opinion1 {
-  display: inline-block;
+.opinion1 {
+  display: flex;
+  flex-direction: column;
   width: 30%;
   margin-right: 2%;
   background-color: hsla(240deg, 100%, 80%, 0.6);
-  text-align: center;
   border-radius: 5%;
-  height: 500px;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#opinionimg {
+.opinionimg {
   border: 10px solid white;
   margin-top: 50px;
 }
 
-#opinion2 {
-  display: inline-block;
+.opinion2 {
   background-color: hsla(240deg, 100%, 80%, 0.6);
   width: 30%;
-  text-align: center;
   border-radius: 5%;
-  height: 500px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#opinion1 h2,
-#opinion2 h2 {
+.opinion1 h2,
+.opinion2 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
 }
 
-#opinion1 h3,
-#opinion2 h3 {
+.opinion1 h3,
+.opinion2 h3 {
   color: hsl(0deg, 100%, 100%);
 }
 
-#opinion1 p,
-#opinion2 p {
+.opinion1 p,
+.opinion2 p {
   line-height: 30px;
   color: white;
+  padding: 0px 20px;
 }
 
-.guarantees {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 3%;
-}
-
-.guarantees h4 {
-  background-color: hsl(240deg, 100%, 20%);
-  color: white;
-  font-weight: 400;
-  padding: 30px;
-  font-size: 16px;
-  margin-right: 5%;
-  letter-spacing: 1px;
-}
-
-#guarantees h4:hover {
-  cursor: default;
-}
-
-.submenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.submenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.submenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: black;
-}
-
-.submenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* Mobile Version */
-@media only screen and (max-width: 426px) {
-  main #header #block {
+/* Mobile Media Query */
+@media only screen and (max-width: 425px) {
+  main .header .block {
+    display: block;
     width: 80%;
+    text-align: center;
   }
 
   .mainmenu {
@@ -240,17 +139,14 @@ span {
     display: none;
   }
 
-  #section {
-    display: unset;
-    justify-content: unset;
-    align-items: unset;
-    width: unset;
-    height: unset;
-    margin: 2% 0%;
+  .section {
+    display: block;
+    margin: 0;
+    padding: unset;
     background-color: hsl(240deg, 100%, 20%);
   }
 
-  #avaliation {
+  .avaliation {
     display: inline-block;
     width: 100%;
     margin-right: unset;
@@ -260,7 +156,7 @@ span {
     text-align: center;
   }
 
-  #opinion1 {
+  .opinion1 {
     display: inline-block;
     width: 100%;
     margin-right: unset;
@@ -270,7 +166,7 @@ span {
     height: unset;
   }
 
-  #opinion2 {
+  .opinion2 {
     display: inline-block;
     background-color: hsl(240deg, 100%, 50%);
     width: 100%;
@@ -284,40 +180,6 @@ span {
     margin-right: unset;
   }
 }
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-
-.mainmenu1 li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-}
-
-.mainmenu1 a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -363,11 +225,6 @@ body {
   padding: 0% 1%;
 }
 
-body {
-  margin: 10px 10px 10px 10px;
-  font-size: 16px;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -407,19 +264,19 @@ ul {
   color: hsl(240deg, 100%, 50%);
 }
 
-#header-label1 {
+.header-label1 {
   justify-content: center;
   display: inline-flex;
   width: 50%;
   align-items: center;
 }
 
-#header-label1 h1 {
+.header-label1 h1 {
   margin-right: 20px;
   padding-bottom: 10px;
 }
 
-#header-label1 h1:hover {
+.header-label1 h1:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
   cursor: default;
@@ -441,8 +298,11 @@ a:hover {
 
 .faq {
   text-align: center;
-  width: 50%;
-  display: inline-block;
+  flex: 1;
+}
+
+.main-contact-us {
+  display: flex;
 }
 
 .main-label2 {
@@ -468,93 +328,37 @@ a:hover {
   padding: 20px;
 }
 
-#asb {
+.asb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  float: right;
   flex-wrap: wrap;
+  flex: 1;
 }
 
-#asb img {
+.asb img {
   margin: 0px 0px 20px 0px;
   width: 60%;
   height: 400px;
 }
 
-footer {
-  margin-top: 50px;
-}
+/* Mobile Media Query */
+@media screen and (max-width: 426px) {
+  .main-contact-us {
+    display: block;
+  }
 
-.submenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+  .asb img {
+    width: 80%;
+  }
 
-.submenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
+  .header-label1 {
+    width: 100%;
+  }
 }
-
-.submenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: black;
-}
-
-.submenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-}
-
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 0;
-}
-
-.mainmenu1 li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
-.mainmenu1 a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
 .loginmain {
   margin: 5% 0% 5% 0%;
+  text-align: center;
 }
 
 .loginmain h1 {
@@ -599,22 +403,22 @@ main p:hover {
   color: white;
 }
 
-#label2 {
+.label2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-#label2 h2 {
+.label2 h2 {
   margin: 10px;
   font-weight: 400;
 }
 
-#label2 a {
+.label2 a {
   color: black;
   font-size: 1.5rem;
 }
 
-#label2 a:hover {
+.label2 a:hover {
   color: hsl(240deg, 100%, 50%);
 }
 
@@ -641,50 +445,11 @@ main p:hover {
     font-size: 1.5rem;
   }
 
-  #label2 {
+  .label2 {
     font-size: 1rem;
   }
-
-  footer h2 {
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
 }
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu li {
-  list-style: none;
-  display: inline-block;
-}
-
-.mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
-.mainmenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-#header-label2 {
+.header-label2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -747,6 +512,7 @@ form h2:hover {
   padding: 0% 1%;
 }
 
+/* Footer of the login, registar and contact us pages */
 .footer {
   margin: 5% 0%;
   left: 0;
@@ -767,250 +533,17 @@ form h2:hover {
   width: 100%;
 }
 
-footer footer img {
-  font-size: 1.5rem;
-}
-
 footer img {
   width: 50px;
   padding: 0% 1%;
 }
 
-#footer {
-  text-align: center;
-  margin: 3% 0%;
-}
-
-#footer h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.logo {
-  width: 50px;
-}
-
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 70%;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.mainmenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu-2 {
-  width: 29%;
-  text-align: center;
-  display: inline-block;
-  padding-left: 0;
-}
-
-.mainmenu-2 #pesquisar {
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.mainmenu-2 label {
-  padding: 10px;
-}
-
-.mainmenu-2 label:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-}
-
-.mainmenu-2 .pesquisar-label:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-.banner {
-  background-image: url("../../assets/header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 300px;
-}
-
-.banner-label {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.banner-label a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  border: 2px groove white;
-}
-
-.banner-label a:hover {
-  font-weight: 700;
-}
-
-.banner-label h1 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.banner-label2 {
-  width: 40%;
-  text-align: center;
-  height: 50%;
-}
-
-.banner-label2 h1 {
-  color: white;
-  font-size: 2rem;
-}
-
-.banner-label3 {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.banner-label3 h1 {
-  color: white;
-  font-size: 1.5rem;
-  line-height: 30px;
-  color: white;
-}
-
-.discover-out-products {
-  text-align: center;
-  margin: 100px 0px 100px 0px;
-}
-
-.discover-out-products h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 8% auto;
-}
-
-.product3-banner {
-  display: inline-block;
-  text-align: center;
-}
-
-.product2-banner {
-  display: inline-block;
-  text-align: center;
-}
-
-.product1-banner {
-  display: inline-block;
-  text-align: center;
-}
-
-.productsanchor {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  transition: background-color 500ms linear, color 500ms linear;
-}
-
-.productsanchor:hover {
-  background-color: white;
-  color: hsl(240deg, 100%, 50%);
-}
-
-.producth2 {
-  margin-bottom: 50px;
-}
-
-.products-presentation-label {
-  display: flex;
-  flex-direction: column;
-}
-
-.product-1,
-.product-2,
-.product-3 {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto 30px auto;
-  background-color: orange;
-  padding: 2% 5% 2% 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.Shop {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 10px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  transition: background-color 500ms linear, color 500ms linear;
-  width: 25%;
-  align-self: center;
-}
-
-.Shop:hover {
-  background-color: white;
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* Section above still needs to be made */
 footer {
   margin-top: 50px;
 }
 
+/* ----------------------------------------------------- */
+/* footer of the pages index and aboutus */
 .guarantees {
   width: 100%;
   display: inline-flex;
@@ -1056,6 +589,326 @@ footer {
 
 .submenu a:hover {
   color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 426px) {
+  .guarantees {
+    display: unset;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Borders and margin of the body content of the html pages */
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* ------------------------------------ */
+/* Main menu of the pages index.html and aboutus.html */
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.mainmenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* ------------------------------------ */
+/* Main menu 2 of the pages index.html and aboutus.html */
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-flex;
+  padding-left: 0;
+}
+
+.mainmenu-2 #pesquisar {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.mainmenu-2 label {
+  padding: 10px;
+}
+
+.mainmenu-2 label:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* ------------------------------------ */
+/* Main menu of the pages Contactus.html, registar.html, login.html */
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mainmenu1 li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu1 a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* ------------------------------------ */
+/* Index.html design below */
+.banner {
+  background-image: url(../../assets/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.banner-label {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.banner-label2 {
+  width: 20%;
+  height: 50%;
+  background-color: red;
+}
+
+.banner-label:hover {
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  cursor: default;
+}
+
+.banner-label h1:hover {
+  cursor: default;
+}
+
+.banner-label a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px groove white;
+}
+
+.banner-label a:hover {
+  padding: 10px 10px 10px 10px;
+}
+
+.banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.discover-out-products {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+
+.discover-out-products h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 8% auto;
+}
+
+.product1-banner, .product2-banner, .product3-banner {
+  display: inline-block;
+  text-align: center;
+}
+
+.productsanchor {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
+}
+
+.productsanchor:hover {
+  background-color: white;
+  color: hsl(240deg, 100%, 50%);
+}
+
+.producth2 {
+  margin-bottom: 50px;
+}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 30px auto;
+  background-color: orange;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Shop {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 10px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  transition: background-color 500ms linear, color 500ms linear;
+  width: 25%;
+  align-self: center;
+  text-decoration: none;
+}
+
+.Shop:hover {
+  background-color: white;
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* Mobile media query */
+@media screen and (max-width: 426px) {
+  /* Media query of the menu of the index and about us page (mobile) */
+  nav {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .mainmenu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mainmenu li {
+    margin: 0;
+  }
+
+  .mainmenu-2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .banner {
+    min-height: 400px;
+    flex-direction: column;
+  }
+
+  .banner-label {
+    display: block;
+    width: 50%;
+    height: 40%;
+  }
+
+  /*------------------------------------------------------------------------------------------ */
+  .discover-out-products {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .product1-banner, .product2-banner, .product3-banner {
+    display: inline-block;
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .products {
+    display: block;
+    margin: 0;
+  }
+
+  .product-1,
+.product-2,
+.product-3 {
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
+  }
+
+  .Shop {
+    width: 50%;
+  }
+
+  .guarantees h4 {
+    text-align: center;
+  }
+
+  .main-pages {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -10,14 +10,23 @@
   box-sizing: border-box;
 }
 
+/* Borders and margin of the body content of the html pages */
+
 body {
   font-size: 16px;
   margin: 10px 10px 10px 10px;
 }
 
+
+
 .logo {
   width: 50px;
 }
+
+/* ------------------------------------ */
+
+
+/* Main menu of the pages index.html and aboutus.html */
 
 .mainmenu {
   justify-content: center;
@@ -30,7 +39,6 @@ body {
 
 .mainmenu li {
   list-style: none;
-  display: inline-block;
   padding: 10px;
   margin-right: 10%;
 }
@@ -50,10 +58,16 @@ body {
   color: $blue;
 }
 
+
+/* ------------------------------------ */
+
+
+/* Main menu 2 of the pages index.html and aboutus.html */
+
 .mainmenu-2 {
   width: 29%;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
   padding-left: 0;
 }
 
@@ -74,11 +88,52 @@ body {
   color: $blue;
 }
 
+
+/* ------------------------------------ */
+
+
+/* Main menu of the pages Contactus.html, registar.html, login.html */
+
+
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mainmenu1 li:hover {
+  border-bottom: 1px solid $blue;
+  color: $blue;
+}
+
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainmenu1 a:hover {
+  color: $blue;
+}
+
+/* ------------------------------------ */
+
+
+/* Index.html design below */
+  
 .banner {
-  background-image: url("../../assets/header.jpg");
+  background-image: url(../../assets/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -93,6 +148,23 @@ body {
   border-radius: 10px;
 }
 
+.banner-label2 {
+  width: 20%;
+    height: 50%;
+    background-color: red;
+}
+
+
+.banner-label:hover {
+  background-color: #00000094;
+  cursor: default;
+}
+
+.banner-label h1:hover{
+  cursor: default;
+}
+
+
 .banner-label a {
   color: white;
   text-decoration: none;
@@ -103,8 +175,9 @@ body {
 }
 
 .banner-label a:hover {
-  font-weight: 700;
+  padding: 10px 10px 10px 10px
 }
+
 
 .banner-label h1 {
   color: white;
@@ -112,31 +185,6 @@ body {
   margin-bottom: 20px;
 }
 
-.banner-label2 {
-  width: 40%;
-  text-align: center;
-  height: 50%;
-}
-
-.banner-label2 h1 {
-  color: white;
-  font-size: 2rem;
-}
-
-.banner-label3 {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.banner-label3 h1 {
-  color: white;
-  font-size: 1.5rem;
-  line-height: 30px;
-  color: white;
-}
 
 .discover-out-products {
   text-align: center;
@@ -155,17 +203,8 @@ body {
     margin: 8% auto;
 }
 
-.product3-banner {
-  display: inline-block;
-  text-align: center;
-}
 
-.product2-banner {
-  display: inline-block;
-  text-align: center;
-}
-
-.product1-banner {
+.product1-banner, .product2-banner, .product3-banner {
   display: inline-block;
   text-align: center;
 }
@@ -179,6 +218,7 @@ body {
   padding: 10px 30px;
   border: 1px solid $blue;
   transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
 }
 
 .productsanchor:hover {
@@ -219,6 +259,7 @@ body {
   transition: background-color 500ms linear, color 500ms linear;
   width: 25%;
   align-self: center;
+  text-decoration: none;
 }
 
 .Shop:hover {
@@ -226,55 +267,88 @@ body {
   color: $blue;
 }
 
-/* Section above still needs to be made */
+/* Mobile media query */
 
-footer {
-  margin-top: 50px;
+
+@media screen and (max-width: 426px) {
+
+  
+  /* Media query of the menu of the index and about us page (mobile) */
+
+  nav {
+    display:block;
+    margin-bottom: 20px;
+  }
+
+  .mainmenu {
+    display:block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mainmenu li {
+    margin: 0;
+  }
+
+  .mainmenu-2 {
+    display: block;
+    width: 100%;
+    text-align:center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .banner {
+      min-height: 400px;
+      flex-direction: column;
+  }
+
+  .banner-label{
+    display: block;
+    width: 50%;
+    height: 40%;
+  }
+
+  /*------------------------------------------------------------------------------------------ */
+
+
+  .discover-out-products  {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .product1-banner, .product2-banner, .product3-banner {
+    display: inline-block;
+    text-align: center;
+    min-height: 300px;
+  }
+
+ .products {
+   display: block;
+   margin: 0;
+ } 
+
+.product-1,
+.product-2,
+.product-3 {
+  width: 100%;
+  min-height: 300px;
+  justify-content: center;
 }
 
-.guarantees {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 3%;
+.Shop {
+  width: 50%;
 }
 
 .guarantees h4 {
-  background-color: $darkblue;
-  color: white;
-  font-weight: 400;
-  padding: 30px;
-  font-size: 16px;
-  margin-right: 5%;
-  letter-spacing: 1px;
+  text-align:center;
 }
 
-.submenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
+.main-pages {
   margin: 0;
 }
-
-.submenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
 }
 
-.submenu li:hover {
-  border-bottom: 1px solid $blue;
-  color: $blue;
-}
 
-.submenu li a {
-  text-decoration: none;
-  color: black;
-}
-
-.submenu a:hover {
-  color: $blue;
-}
