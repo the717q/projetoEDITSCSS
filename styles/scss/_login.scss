@@ -1,75 +1,59 @@
 .loginmain {
   margin: 5% 0% 5% 0%;
   text-align: center;
+  h1 {
+    margin-bottom: 0%;
+    font-size: 1.5rem;
+    margin: 2% 0% 1% 0%;
+      &:hover {
+        cursor: default;
+      }
+    }
+  p {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    .userpass {
+      font-weight: 500;
+    }
+  }
 }
 
-
-.loginmain h1 {
-  margin-bottom: 0%;
-  font-size: 1.5rem;
-  margin: 2% 0% 1% 0%;
-}
-
-.loginmain h1:hover {
-  cursor: default;
-}
-
-.loginmain .userpass {
-  font-weight: 500;
-}
-
-.loginmain p {
-  font-size: 1.2rem;
-  margin-top: 50px;
-}
-
-main p:hover {
-  cursor: default;
-}
 
 .label1 {
   display: flex;
   justify-content: center;
   margin: 2% 0%;
+
+    .loginform {
+    display: block;
+    text-align: center;
+    background-color: $blue;
+    padding: 20px;
+    border: 1px groove black;
+    margin-top: 20px;
+    
+    .usernpass {
+      color: white;
+    }
+  }
 }
 
-.loginform {
-  display: block;
-  text-align: center;
-  background-color: $blue;
-  padding: 20px;
-  border: 1px groove black;
-  margin-top: 20px;
-}
-
-.loginform .usernpass {
-  color: white;
-}
 
 .label2 {
   font-size: 1.5rem;
   font-weight: 400;
-}
-
-.label2 h2 {
-  margin: 10px;
-  font-weight: 400;
-}
-
-.label2 a {
-  color: black;
-  font-size: 1.5rem;
-}
-
-.label2 a:hover {
-  color: $blue;
-}
-
-  .socialmedia img {
-    display: inlineblock;
-    height: 50px;
-    padding: 0% 1%;
+  h2 {
+    margin: 10px;
+    font-weight: 400;
   }
+  a {
+    color: black;
+    font-size: 1.5rem;
+    a:hover {
+      color: $blue;
+    }
+  }
+}
 
 @media only screen and (max-width: 766px) {
   body {
