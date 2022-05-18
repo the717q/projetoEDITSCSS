@@ -27,7 +27,7 @@ main {
             line-height: 40px;
             font-size: 24px;
           }
-          img {
+          .main-img {
             width: 20%;
           }
       }
@@ -42,7 +42,7 @@ main {
       background-color: $darkblue;
         .avaliation {
           width: 20%;
-          margin-right: 5%;
+          margin-right: 2%;
           background-color: $lightblue;
           border-radius: 5%;
           color: white;
@@ -84,7 +84,7 @@ main {
           }
           .opinionimg {
             border: 10px solid white;
-            margin-top: 510px;
+            width: 80px;
             p {
               line-height: 30px;
               color: white;
@@ -103,6 +103,8 @@ main {
           align-items: center;
           justify-content:center;
           text-align: center;
+          margin-right: 2%;
+          
               h2 {
               font-size: 36px;
               color: $darkblue;
@@ -113,9 +115,9 @@ main {
                   color: $darkblue;
               }
             }
-              .opinionimg {
+            .opinionimg {
               border: 10px solid white;
-              margin-top: 510px;
+              width: 80px;
             }
               p {
               line-height: 30px;
@@ -143,52 +145,30 @@ main {
     width: 80%;
     text-align: center;
   }
-  .mainmenu {
-    width: 100%;
-  }
-
-  .mainmenu-2 {
-    display: none;
-  }
-
+  
+  main {
   .section {
-    display: block;
-    margin: 0;
-    padding: unset;
-    background-color: $darkblue;
-  }
+    flex-direction: column;
+    .avaliation {
+      width: 80%;
+      border-radius: 0%;
+    }
+    .opinion1 {
+      width: 80%;
+      border-radius: 0%;
+      margin-top: 5%;
+    }
+    .opinion2 {
+      width: 80%;
+      border-radius: 0%;
+      margin-top: 5%;
 
-  .avaliation {
-    display: inline-block;
-    width: 100%;
-    margin-right: unset;
-    background-color: $blue;
-    border-radius: unset;
-    color: white;
-    text-align: center;
+    }
   }
+  }
+}
 
-  .opinion1 {
-    display: inline-block;
-    width: 100%;
-    margin-right: unset;
-    background-color: $blue;
-    text-align: center;
-    border-radius: unset;
-    height: unset;
-  }
-
-  .opinion2 {
-    display: inline-block;
-    background-color: $blue;
-    width: 100%;
-    text-align: center;
-    border-radius: unset;
-    height: unset;
-  }
-
-  .guarantees h4 {
-    padding: 15px;
-    margin-right: unset;
-  }
+.guarantees h4 {
+  padding: 15px;
+  margin-right: unset;
 }

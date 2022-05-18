@@ -184,8 +184,8 @@ body {
     margin: 8% auto;
 
     .product1-banner, .product2-banner, .product3-banner {
-      display: inline-block;
       text-align: center;
+      flex: 1;
 
       .productsanchor {
         background-color: $blue;
@@ -250,7 +250,7 @@ body {
 /* Mobile media query */
 
 
-@media screen and (max-width: 426px) {
+@media only screen and (max-width: 426px) {
 
   
   /* Media query of the menu of the index and about us page (mobile) */
@@ -261,15 +261,18 @@ body {
   }
 
   .mainmenu {
-    display:block;
+    display: flex;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
+    li {
+      margin: 0;
+    }
+    .logo {
+      display: none;
+    }
   }
 
-  .mainmenu li {
-    margin: 0;
-  }
 
   .mainmenu-2 {
     display: block;
@@ -277,21 +280,16 @@ body {
     text-align:center;
   }
 
-  .logo {
-    display: none;
-  }
 
   .banner {
       min-height: 400px;
       flex-direction: column;
+      .banner-label{
+        display: block;
+        width: 80%;
+        height: 40%;
+      }
   }
-
-  .banner-label{
-    display: block;
-    width: 50%;
-    height: 40%;
-  }
-
   /*------------------------------------------------------------------------------------------ */
 
 
@@ -299,36 +297,32 @@ body {
     margin: 50px 0px 50px 0px;
   }
 
+  .products {
+    flex-direction: column;
+
   .product1-banner, .product2-banner, .product3-banner {
-    display: inline-block;
     text-align: center;
     min-height: 300px;
   }
-
- .products {
-   display: block;
-   margin: 0;
- } 
-
-.product-1,
-.product-2,
-.product-3 {
-  width: 100%;
-  min-height: 300px;
-  justify-content: center;
 }
 
-.Shop {
-  width: 50%;
-}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+
+    .product-1, .product-2, .product-3 {
+         width: 80%;
+         min-height: 300px;
+        justify-content: center;
+    .Shop {
+        width: 50%;
+      }
+    }
 
 .guarantees h4 {
   text-align:center;
-}
+      }
+  }
 
-.main-pages {
-  margin: 0;
 }
-}
-
-

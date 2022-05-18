@@ -27,7 +27,7 @@ main .header .block p {
   line-height: 40px;
   font-size: 24px;
 }
-main .header .block img {
+main .header .block .main-img {
   width: 20%;
 }
 main .section {
@@ -41,7 +41,7 @@ main .section {
 }
 main .section .avaliation {
   width: 20%;
-  margin-right: 5%;
+  margin-right: 2%;
   background-color: hsla(240deg, 100%, 80%, 0.6);
   border-radius: 5%;
   color: white;
@@ -84,7 +84,7 @@ main .section .opinion1 h3 span {
 }
 main .section .opinion1 .opinionimg {
   border: 10px solid white;
-  margin-top: 510px;
+  width: 80px;
 }
 main .section .opinion1 .opinionimg p {
   line-height: 30px;
@@ -101,6 +101,7 @@ main .section .opinion2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-right: 2%;
 }
 main .section .opinion2 h2 {
   font-size: 36px;
@@ -114,7 +115,7 @@ main .section .opinion2 h3 span {
 }
 main .section .opinion2 .opinionimg {
   border: 10px solid white;
-  margin-top: 510px;
+  width: 80px;
 }
 main .section .opinion2 p {
   line-height: 30px;
@@ -137,55 +138,29 @@ main .section .opinion2 p {
     text-align: center;
   }
 
-  .mainmenu {
-    width: 100%;
+  main .section {
+    flex-direction: column;
   }
-
-  .mainmenu-2 {
-    display: none;
+  main .section .avaliation {
+    width: 80%;
+    border-radius: 0%;
   }
-
-  .section {
-    display: block;
-    margin: 0;
-    padding: unset;
-    background-color: hsl(240deg, 100%, 20%);
+  main .section .opinion1 {
+    width: 80%;
+    border-radius: 0%;
+    margin-top: 5%;
   }
-
-  .avaliation {
-    display: inline-block;
-    width: 100%;
-    margin-right: unset;
-    background-color: hsl(240deg, 100%, 50%);
-    border-radius: unset;
-    color: white;
-    text-align: center;
-  }
-
-  .opinion1 {
-    display: inline-block;
-    width: 100%;
-    margin-right: unset;
-    background-color: hsl(240deg, 100%, 50%);
-    text-align: center;
-    border-radius: unset;
-    height: unset;
-  }
-
-  .opinion2 {
-    display: inline-block;
-    background-color: hsl(240deg, 100%, 50%);
-    width: 100%;
-    text-align: center;
-    border-radius: unset;
-    height: unset;
-  }
-
-  .guarantees h4 {
-    padding: 15px;
-    margin-right: unset;
+  main .section .opinion2 {
+    width: 80%;
+    border-radius: 0%;
+    margin-top: 5%;
   }
 }
+.guarantees h4 {
+  padding: 15px;
+  margin-right: unset;
+}
+
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -446,10 +421,6 @@ ul li a {
   font-weight: 600;
   font-size: 1.5rem;
 }
-.footer img {
-  width: 5%;
-  padding: 0% 1%;
-}
 
 /* ----------------------------------------------------- */
 /* footer of the pages index and aboutus */
@@ -460,6 +431,7 @@ ul li a {
   margin-bottom: 3%;
 }
 .guarantees h4 {
+  text-align: center;
   background-color: hsl(240deg, 100%, 20%);
   color: white;
   font-weight: 400;
@@ -649,8 +621,8 @@ body {
   margin: 8% auto;
 }
 .products .product1-banner, .products .product2-banner, .products .product3-banner {
-  display: inline-block;
   text-align: center;
+  flex: 1;
 }
 .products .product1-banner .productsanchor, .products .product2-banner .productsanchor, .products .product3-banner .productsanchor {
   background-color: hsl(240deg, 100%, 50%);
@@ -704,7 +676,7 @@ body {
 }
 
 /* Mobile media query */
-@media screen and (max-width: 426px) {
+@media only screen and (max-width: 426px) {
   /* Media query of the menu of the index and about us page (mobile) */
   nav {
     display: block;
@@ -712,14 +684,16 @@ body {
   }
 
   .mainmenu {
-    display: block;
+    display: flex;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
   }
-
   .mainmenu li {
     margin: 0;
+  }
+  .mainmenu .logo {
+    display: none;
   }
 
   .mainmenu-2 {
@@ -728,18 +702,13 @@ body {
     text-align: center;
   }
 
-  .logo {
-    display: none;
-  }
-
   .banner {
     min-height: 400px;
     flex-direction: column;
   }
-
-  .banner-label {
+  .banner .banner-label {
     display: block;
-    width: 50%;
+    width: 80%;
     height: 40%;
   }
 
@@ -748,35 +717,28 @@ body {
     margin: 50px 0px 50px 0px;
   }
 
-  .product1-banner, .product2-banner, .product3-banner {
-    display: inline-block;
+  .products {
+    flex-direction: column;
+  }
+  .products .product1-banner, .products .product2-banner, .products .product3-banner {
     text-align: center;
     min-height: 300px;
   }
 
-  .products {
-    display: block;
-    margin: 0;
+  .products-presentation-label {
+    display: flex;
+    flex-direction: column;
   }
-
-  .product-1,
-.product-2,
-.product-3 {
-    width: 100%;
+  .products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
+    width: 80%;
     min-height: 300px;
     justify-content: center;
   }
-
-  .Shop {
+  .products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
     width: 50%;
   }
-
-  .guarantees h4 {
+  .products-presentation-label .guarantees h4 {
     text-align: center;
-  }
-
-  .main-pages {
-    margin: 0;
   }
 }
 
