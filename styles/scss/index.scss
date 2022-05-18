@@ -35,28 +35,25 @@ body {
   width: 70%;
   padding: 0;
   margin: 0;
+  li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 10%;
+    &:hover {
+      border-bottom: 1px solid $blue;
+      color: $blue;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
 }
 
-.mainmenu li {
-  list-style: none;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.mainmenu li:hover {
-  border-bottom: 1px solid $blue;
-  color: $blue;
-}
-
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.mainmenu a:hover {
-  color: $blue;
-}
 
 
 /* ------------------------------------ */
@@ -69,19 +66,14 @@ body {
   text-align: center;
   display: inline-flex;
   padding-left: 0;
-}
-
-.mainmenu-2 #pesquisar {
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.mainmenu-2 label {
-  padding: 10px;
-}
-
-.mainmenu-2 label:hover {
-  border-bottom: 1px solid $blue;
+    .pesquisar-label {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
+  }
 }
 
 .mainmenu-2 .pesquisar-label:hover {
@@ -102,27 +94,26 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    &:hover {
+      border-bottom: 1px solid $blue;
+      color: $blue;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: $blue;
+    }
+  }
+}
 }
 
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
 
-.mainmenu1 li:hover {
-  border-bottom: 1px solid $blue;
-  color: $blue;
-}
 
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-}
-
-.mainmenu1 a:hover {
-  color: $blue;
-}
 
 /* ------------------------------------ */
 
@@ -138,134 +129,123 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 300px;
-}
 
-.banner-label {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.banner-label2 {
-  width: 20%;
+  .banner-label {
+    width: 20%;
+    text-align: center;
     height: 50%;
-    background-color: red;
+    border: 1px solid white;
+    border-radius: 10px;
+          &:hover {
+          background-color: #00000094;
+          cursor: default;
+    }
+
+      h1 {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+          &:hover {
+          cursor: default;
+        }
+    }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        border: 2px groove white;
+          &:hover {
+          padding: 10px 10px 10px 10px
+          }
+        }
+    }
 }
 
 
-.banner-label:hover {
-  background-color: #00000094;
-  cursor: default;
-}
-
-.banner-label h1:hover{
-  cursor: default;
-}
-
-
-.banner-label a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  border: 2px groove white;
-}
-
-.banner-label a:hover {
-  padding: 10px 10px 10px 10px
-}
-
-
-.banner-label h1 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
 
 
 .discover-out-products {
   text-align: center;
   margin: 100px 0px 100px 0px;
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
-.discover-out-products h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 
 .products {
     display: flex;
     justify-content: center;
     height: auto;
     margin: 8% auto;
+
+    .product1-banner, .product2-banner, .product3-banner {
+      display: inline-block;
+      text-align: center;
+
+      .productsanchor {
+        background-color: $blue;
+        color: white;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 10px 30px;
+        border: 1px solid $blue;
+        transition: background-color 500ms linear, color 500ms linear;
+        text-decoration: none;
+          &:hover {
+            background-color: white;
+            color: $blue;
+        }
+      }
+
+      .producth2 {
+        margin-bottom: 50px;
+      }
+    }
 }
 
 
-.product1-banner, .product2-banner, .product3-banner {
-  display: inline-block;
-  text-align: center;
-}
 
-.productsanchor {
-  background-color: $blue;
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid $blue;
-  transition: background-color 500ms linear, color 500ms linear;
-  text-decoration: none;
-}
-
-.productsanchor:hover {
-  background-color: white;
-  color: $blue;
-}
-
-.producth2 {
-  margin-bottom: 50px;
-}
 
 .products-presentation-label {
   display: flex;
   flex-direction: column;
+
+    .product-1, .product-2, .product-3 {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto 30px auto;
+      background-color: orange;
+      padding: 2% 5% 2% 5%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
+      .Shop {
+        background-color: $blue;
+        color: white;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 10px 10px;
+        border: 1px solid $blue;
+        transition: background-color 500ms linear, color 500ms linear;
+        width: 25%;
+        align-self: center;
+        text-decoration: none;
+          &:hover {
+              background-color: white;
+              color: $blue;
+            }
+        }
+      }   
 }
 
-.product-1,
-.product-2,
-.product-3 {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto 30px auto;
-  background-color: orange;
-  padding: 2% 5% 2% 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.Shop {
-  background-color: $blue;
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 10px;
-  border: 1px solid $blue;
-  transition: background-color 500ms linear, color 500ms linear;
-  width: 25%;
-  align-self: center;
-  text-decoration: none;
-}
-
-.Shop:hover {
-  background-color: white;
-  color: $blue;
-}
 
 /* Mobile media query */
 

@@ -1,122 +1,131 @@
 
 /* Main content of the page */
 
-main .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-image: url("../../assets/aboutusheader.jpg");
-  background-position: center;
-  background-size: cover;
+main {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../../assets/aboutusheader.jpg");
+    background-position: center;
+    background-size: cover;
+      .block {
+        display: block;
+        width: 50%;
+        text-align: center;
+          h1 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 48px;
+              span {
+              color: $darkblue;
+            }
+          }
+          p {
+            color: white;
+            line-height: 40px;
+            font-size: 24px;
+          }
+          img {
+            width: 20%;
+          }
+      }
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 10% 0%;
+      margin: 2% 0%;
+      background-color: $darkblue;
+        .avaliation {
+          width: 20%;
+          margin-right: 5%;
+          background-color: $lightblue;
+          border-radius: 5%;
+          color: white;
+            h2 {
+            color: hsl(0, 100%, 100%, 1);
+            text-align: center;
+            margin: 30px 30px 0px 30px;
+              span {
+                color: $darkblue;
+              }
+            }
+            p {
+              color: white;
+              line-height: 20px;
+              text-align: center;
+              margin: 10px 30px 30px 30px;
+            }
+        }
+        .opinion1 {
+          display:flex;
+          flex-direction: column;
+          width: 30%;
+          margin-right: 2%;
+          background-color: $lightblue;
+          border-radius: 5%;
+          min-height: 500px;
+          align-items: center;
+          justify-content:center;
+          text-align: center;
+          h2 {
+            font-size: 36px;
+            color: $darkblue;
+          }
+          h3 {
+            color: hsl(0, 100%, 100%, 1);
+            span {
+              color: $darkblue;
+            }
+          }
+          .opinionimg {
+            border: 10px solid white;
+            margin-top: 510px;
+            p {
+              line-height: 30px;
+              color: white;
+              padding:0px 20px;
+            }
 }
 
+        }
+        .opinion2 {
+          background-color: $lightblue;
+          width: 30%;
+          border-radius: 5%;
+          min-height: 500px;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:center;
+          text-align: center;
+              h2 {
+              font-size: 36px;
+              color: $darkblue;
+            }
+              h3 {
+              color: hsl(0, 100%, 100%, 1);
+                span {
+                  color: $darkblue;
+              }
+            }
+              .opinionimg {
+              border: 10px solid white;
+              margin-top: 510px;
+            }
+              p {
+              line-height: 30px;
+              color: white;
+              padding:0px 20px;
+            }
+        }
+      }
+  }
 
-.mainmenu-2 .pesquisar-label:hover {
-  color: $blue;
-}
-
-main .header .block {
-  display: block;
-  width: 50%;
-  text-align: center;
-}
-
-main .header .block h1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 48px;
-}
-
-main .header .block h1 span {
-  color: $darkblue;
-}
-
-main .header .block img {
-  width: 20%;
-}
-
-main .header .block p {
-  color: white;
-  line-height: 40px;
-  font-size: 24px;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10% 0%;
-  margin: 2% 0%;
-  background-color: $darkblue;
-}
-
-span {
-  color: $darkblue;
-}
-
-.avaliation {
-  width: 20%;
-  margin-right: 5%;
-  background-color: $lightblue;
-  border-radius: 5%;
-  color: white;
-}
-
-.avaliation h2 {
-  color: hsl(0, 100%, 100%, 1);
-  text-align: center;
-  margin: 30px 30px 0px 30px;
-}
-
-.avaliation p {
-  color: white;
-  line-height: 20px;
-  text-align: center;
-  margin: 10px 30px 30px 30px;
-}
-
-.opinion1 {
-  display:flex;
-  flex-direction: column;
-  width: 30%;
-  margin-right: 2%;
-  background-color: $lightblue;
-  border-radius: 5%;
-  min-height: 500px;
-  align-items: center;
-  justify-content:center;
-  text-align: center;
-}
-
-.opinionimg {
-  border: 10px solid white;
-  margin-top: 50px;
-}
-
-.opinion2 {
-  background-color: $lightblue;
-  width: 30%;
-  border-radius: 5%;
-  min-height: 500px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  text-align: center;
-}
-
-.opinion1 h2,
-.opinion2 h2 {
-  font-size: 36px;
-  color: $darkblue;
-}
-
-.opinion1 h3,
-.opinion2 h3 {
-  color: hsl(0, 100%, 100%, 1);
-}
 
 .opinion1 p,
 .opinion2 p {

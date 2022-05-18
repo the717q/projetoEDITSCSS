@@ -5,60 +5,50 @@
   justify-content: center;
   align-items: center;
   margin: 2% 0% 1% 0%;
+
+    .header-label3 {
+      display: block;
+      text-align: center;
+         h1 {
+            margin: 20px 10px 20px 10px;
+            font-size: 1.5rem;
+            &:hover {
+              cursor: default;
+            }
+          }
+
+    img {
+      width: 40px;
+    }
+  }
 }
 
-.header-label3 {
-  display: block;
-  text-align: center;
-}
-
-.header-label3 h1 {
-  margin: 20px 10px 20px 10px;
-  font-size: 1.5rem;
-}
-
-.header-label3 h1:hover {
-  cursor: default;
-}
-
-.header-label3 p {
-  font-size: 1rem;
-}
-
-.header-label3 img {
-  width: 40px;
-}
 
 .main-label1 {
   display: flex;
   width: 100%;
   justify-content: center;
+
+  .login-register-forms-label {
+    padding: 0px 15px 15px 15px;
+    display: block;
+    text-align: center;
+    background-color: hsla(240, 100%, 60%, 1);
+    border: 1px groove black;
+
+    .h2-form {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+        &:after {
+          cursor: default;
+        }    
+      }
+      
+    .agree {
+      color: white;
+    }
+  }  
 }
 
-.login-register-forms-label {
-  padding: 0px 15px 15px 15px;
-  display: block;
-  text-align: center;
-  background-color: hsla(240, 100%, 60%, 1);
-  border: 1px groove black;
-}
 
-login-register-forms-label .h2-form {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: white;
-}
-
-form .agree {
-  color: white;
-}
-
-form h2:hover {
-  cursor: default;
-}
-
-.socialmedia img {
-  display: inlineblock;
-  height: 50px;
-  padding: 0% 1%;
-}

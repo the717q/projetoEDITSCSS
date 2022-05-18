@@ -4,38 +4,34 @@
   justify-content: center;
   align-items: center;
   margin: 2% 0% 1% 0%;
+    .header-label3 {
+    text-align: center;
+       h1 {
+        font-size: 1.5rem;
+      }
+    }
 }
 
-.header-label3 {
-  text-align: center;
-}
-
-.header-label3 h1 {
-  font-size: 1.5rem;
-}
 
 .main-label1 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.login-register-forms-label {
-  padding: 0px 15px 15px 15px;
-  display: block;
-  text-align: center;
-  background-color: hsla(240, 100%, 60%, 1);
-  border: 1px groove black;
-}
-
-.login-register-forms-label .h2-form {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: white;
-}
-
-.login-register-forms-label p {
-  color: white;
+  .login-register-forms-label {
+    padding: 0px 15px 15px 15px;
+    display: block;
+    text-align: center;
+    background-color: hsla(240, 100%, 60%, 1);
+    border: 1px groove black;
+    .h2-form {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
 }
 
 .socialmedia img {

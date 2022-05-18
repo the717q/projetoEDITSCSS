@@ -9,38 +9,28 @@ main .header {
   background-position: center;
   background-size: cover;
 }
-
-.mainmenu-2 .pesquisar-label:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
 main .header .block {
   display: block;
   width: 50%;
   text-align: center;
 }
-
 main .header .block h1 {
   color: white;
   text-transform: uppercase;
   font-size: 48px;
 }
-
 main .header .block h1 span {
   color: hsl(240deg, 100%, 20%);
 }
-
-main .header .block img {
-  width: 20%;
-}
-
 main .header .block p {
   color: white;
   line-height: 40px;
   font-size: 24px;
 }
-
-.section {
+main .header .block img {
+  width: 20%;
+}
+main .section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,33 +39,28 @@ main .header .block p {
   margin: 2% 0%;
   background-color: hsl(240deg, 100%, 20%);
 }
-
-span {
-  color: hsl(240deg, 100%, 20%);
-}
-
-.avaliation {
+main .section .avaliation {
   width: 20%;
   margin-right: 5%;
   background-color: hsla(240deg, 100%, 80%, 0.6);
   border-radius: 5%;
   color: white;
 }
-
-.avaliation h2 {
+main .section .avaliation h2 {
   color: hsl(0deg, 100%, 100%);
   text-align: center;
   margin: 30px 30px 0px 30px;
 }
-
-.avaliation p {
+main .section .avaliation h2 span {
+  color: hsl(240deg, 100%, 20%);
+}
+main .section .avaliation p {
   color: white;
   line-height: 20px;
   text-align: center;
   margin: 10px 30px 30px 30px;
 }
-
-.opinion1 {
+main .section .opinion1 {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -87,13 +72,26 @@ span {
   justify-content: center;
   text-align: center;
 }
-
-.opinionimg {
-  border: 10px solid white;
-  margin-top: 50px;
+main .section .opinion1 h2 {
+  font-size: 36px;
+  color: hsl(240deg, 100%, 20%);
 }
-
-.opinion2 {
+main .section .opinion1 h3 {
+  color: hsl(0deg, 100%, 100%);
+}
+main .section .opinion1 h3 span {
+  color: hsl(240deg, 100%, 20%);
+}
+main .section .opinion1 .opinionimg {
+  border: 10px solid white;
+  margin-top: 510px;
+}
+main .section .opinion1 .opinionimg p {
+  line-height: 30px;
+  color: white;
+  padding: 0px 20px;
+}
+main .section .opinion2 {
   background-color: hsla(240deg, 100%, 80%, 0.6);
   width: 30%;
   border-radius: 5%;
@@ -104,16 +102,24 @@ span {
   justify-content: center;
   text-align: center;
 }
-
-.opinion1 h2,
-.opinion2 h2 {
+main .section .opinion2 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
 }
-
-.opinion1 h3,
-.opinion2 h3 {
+main .section .opinion2 h3 {
   color: hsl(0deg, 100%, 100%);
+}
+main .section .opinion2 h3 span {
+  color: hsl(240deg, 100%, 20%);
+}
+main .section .opinion2 .opinionimg {
+  border: 10px solid white;
+  margin-top: 510px;
+}
+main .section .opinion2 p {
+  line-height: 30px;
+  color: white;
+  padding: 0px 20px;
 }
 
 .opinion1 p,
@@ -186,12 +192,10 @@ span {
   align-items: center;
   margin: 2% 0% 1% 0%;
 }
-
-.header-label3 {
+.header-label2 .header-label3 {
   text-align: center;
 }
-
-.header-label3 h1 {
+.header-label2 .header-label3 h1 {
   font-size: 1.5rem;
 }
 
@@ -200,22 +204,19 @@ span {
   align-items: center;
   justify-content: center;
 }
-
-.login-register-forms-label {
+.main-label1 .login-register-forms-label {
   padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
   background-color: hsl(240deg, 100%, 60%);
   border: 1px groove black;
 }
-
-.login-register-forms-label .h2-form {
+.main-label1 .login-register-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
 }
-
-.login-register-forms-label p {
+.main-label1 .login-register-forms-label p {
   color: white;
 }
 
@@ -236,46 +237,16 @@ ul {
   text-align: center;
 }
 
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.mainmenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-
-.mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-}
-
-.mainmenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
 .header-label1 {
   justify-content: center;
   display: inline-flex;
   width: 50%;
   align-items: center;
 }
-
 .header-label1 h1 {
   margin-right: 20px;
   padding-bottom: 10px;
 }
-
 .header-label1 h1:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
@@ -285,45 +256,33 @@ ul {
 ul li {
   list-style: none;
 }
-
 ul li a {
   color: black;
   text-decoration: none;
 }
 
-a:hover {
-  color: hsl(240deg, 100%, 50%);
-  cursor: grab;
-}
-
-.faq {
-  text-align: center;
-  flex: 1;
-}
-
 .main-contact-us {
   display: flex;
 }
-
-.main-label2 {
+.main-contact-us .faq {
+  text-align: center;
+  flex: 1;
+}
+.main-contact-us .faq .main-label2 {
   text-align: center;
   margin: 5% 0% 2% 0%;
 }
-
-.qanda {
+.main-contact-us .faq .qanda {
   margin: 4% 0% 4% 0%;
   border-bottom: 1px solid black;
 }
-
-.qanda .question {
+.main-contact-us .faq .qanda .question {
   display: inline-block;
 }
-
-.qanda img {
+.main-contact-us .faq .qanda img {
   vertical-align: middle;
 }
-
-.qanda .answer {
+.main-contact-us .faq .qanda .answer {
   margin: 0%;
   padding: 20px;
 }
@@ -335,7 +294,6 @@ a:hover {
   flex-wrap: wrap;
   flex: 1;
 }
-
 .asb img {
   margin: 0px 0px 20px 0px;
   width: 60%;
@@ -360,28 +318,20 @@ a:hover {
   margin: 5% 0% 5% 0%;
   text-align: center;
 }
-
 .loginmain h1 {
   margin-bottom: 0%;
   font-size: 1.5rem;
   margin: 2% 0% 1% 0%;
 }
-
 .loginmain h1:hover {
   cursor: default;
 }
-
-.loginmain .userpass {
-  font-weight: 500;
-}
-
 .loginmain p {
   font-size: 1.2rem;
   margin-top: 50px;
 }
-
-main p:hover {
-  cursor: default;
+.loginmain p .userpass {
+  font-weight: 500;
 }
 
 .label1 {
@@ -389,8 +339,7 @@ main p:hover {
   justify-content: center;
   margin: 2% 0%;
 }
-
-.loginform {
+.label1 .loginform {
   display: block;
   text-align: center;
   background-color: hsl(240deg, 100%, 50%);
@@ -398,8 +347,7 @@ main p:hover {
   border: 1px groove black;
   margin-top: 20px;
 }
-
-.loginform .usernpass {
+.label1 .loginform .usernpass {
   color: white;
 }
 
@@ -407,25 +355,16 @@ main p:hover {
   font-size: 1.5rem;
   font-weight: 400;
 }
-
 .label2 h2 {
   margin: 10px;
   font-weight: 400;
 }
-
 .label2 a {
   color: black;
   font-size: 1.5rem;
 }
-
-.label2 a:hover {
+.label2 a a:hover {
   color: hsl(240deg, 100%, 50%);
-}
-
-.socialmedia img {
-  display: inlineblock;
-  height: 50px;
-  padding: 0% 1%;
 }
 
 @media only screen and (max-width: 766px) {
@@ -455,26 +394,18 @@ main p:hover {
   align-items: center;
   margin: 2% 0% 1% 0%;
 }
-
-.header-label3 {
+.header-label2 .header-label3 {
   display: block;
   text-align: center;
 }
-
-.header-label3 h1 {
+.header-label2 .header-label3 h1 {
   margin: 20px 10px 20px 10px;
   font-size: 1.5rem;
 }
-
-.header-label3 h1:hover {
+.header-label2 .header-label3 h1:hover {
   cursor: default;
 }
-
-.header-label3 p {
-  font-size: 1rem;
-}
-
-.header-label3 img {
+.header-label2 .header-label3 img {
   width: 40px;
 }
 
@@ -483,33 +414,23 @@ main p:hover {
   width: 100%;
   justify-content: center;
 }
-
-.login-register-forms-label {
+.main-label1 .login-register-forms-label {
   padding: 0px 15px 15px 15px;
   display: block;
   text-align: center;
   background-color: hsl(240deg, 100%, 60%);
   border: 1px groove black;
 }
-
-login-register-forms-label .h2-form {
+.main-label1 .login-register-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
 }
-
-form .agree {
-  color: white;
-}
-
-form h2:hover {
+.main-label1 .login-register-forms-label .h2-form:after {
   cursor: default;
 }
-
-.socialmedia img {
-  display: inlineblock;
-  height: 50px;
-  padding: 0% 1%;
+.main-label1 .login-register-forms-label .agree {
+  color: white;
 }
 
 /* Footer of the login, registar and contact us pages */
@@ -518,28 +439,16 @@ form h2:hover {
   left: 0;
   bottom: 0;
   width: 100%;
+  text-align: center;
+  margin-top: 50px;
 }
-
 .footer h2 {
   font-weight: 600;
   font-size: 1.5rem;
 }
-
-.footer {
-  text-align: center;
-  margin: 3% 0%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-footer img {
-  width: 50px;
+.footer img {
+  width: 5%;
   padding: 0% 1%;
-}
-
-footer {
-  margin-top: 50px;
 }
 
 /* ----------------------------------------------------- */
@@ -550,7 +459,6 @@ footer {
   justify-content: center;
   margin-bottom: 3%;
 }
-
 .guarantees h4 {
   background-color: hsl(240deg, 100%, 20%);
   color: white;
@@ -569,24 +477,20 @@ footer {
   padding: 0;
   margin: 0;
 }
-
 .submenu li {
   list-style: none;
   display: inline-block;
   padding: 10px;
   margin-right: 10%;
 }
-
 .submenu li:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
 }
-
-.submenu li a {
+.submenu a {
   text-decoration: none;
   color: black;
 }
-
 .submenu a:hover {
   color: hsl(240deg, 100%, 50%);
 }
@@ -620,25 +524,21 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .mainmenu li {
   list-style: none;
   padding: 10px;
   margin-right: 10%;
 }
-
 .mainmenu li:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
 }
-
 .mainmenu li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
 }
-
-.mainmenu a:hover {
+.mainmenu li a:hover {
   color: hsl(240deg, 100%, 50%);
 }
 
@@ -650,17 +550,12 @@ body {
   display: inline-flex;
   padding-left: 0;
 }
-
-.mainmenu-2 #pesquisar {
+.mainmenu-2 .pesquisar-label {
   margin-left: 10px;
-  border-radius: 5px;
-}
-
-.mainmenu-2 label {
+  margin-right: 10px;
   padding: 10px;
 }
-
-.mainmenu-2 label:hover {
+.mainmenu-2 .pesquisar-label:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
 }
 
@@ -678,24 +573,20 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .mainmenu1 li {
   list-style: none;
   display: inline-block;
   padding: 10px;
 }
-
 .mainmenu1 li:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
 }
-
 .mainmenu1 li a {
   text-decoration: none;
   color: black;
 }
-
-.mainmenu1 a:hover {
+.mainmenu1 li a:hover {
   color: hsl(240deg, 100%, 50%);
 }
 
@@ -711,31 +602,26 @@ body {
   align-items: center;
   height: 300px;
 }
-
-.banner-label {
+.banner .banner-label {
   width: 20%;
   text-align: center;
   height: 50%;
   border: 1px solid white;
   border-radius: 10px;
 }
-
-.banner-label2 {
-  width: 20%;
-  height: 50%;
-  background-color: red;
-}
-
-.banner-label:hover {
+.banner .banner-label:hover {
   background-color: rgba(0, 0, 0, 0.5803921569);
   cursor: default;
 }
-
-.banner-label h1:hover {
+.banner .banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.banner .banner-label h1:hover {
   cursor: default;
 }
-
-.banner-label a {
+.banner .banner-label a {
   color: white;
   text-decoration: none;
   padding: 5px 10px 5px 10px;
@@ -743,22 +629,14 @@ body {
   letter-spacing: 2px;
   border: 2px groove white;
 }
-
-.banner-label a:hover {
+.banner .banner-label a:hover {
   padding: 10px 10px 10px 10px;
-}
-
-.banner-label h1 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 
 .discover-out-products {
   text-align: center;
   margin: 100px 0px 100px 0px;
 }
-
 .discover-out-products h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -770,13 +648,11 @@ body {
   height: auto;
   margin: 8% auto;
 }
-
-.product1-banner, .product2-banner, .product3-banner {
+.products .product1-banner, .products .product2-banner, .products .product3-banner {
   display: inline-block;
   text-align: center;
 }
-
-.productsanchor {
+.products .product1-banner .productsanchor, .products .product2-banner .productsanchor, .products .product3-banner .productsanchor {
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
@@ -787,13 +663,11 @@ body {
   transition: background-color 500ms linear, color 500ms linear;
   text-decoration: none;
 }
-
-.productsanchor:hover {
+.products .product1-banner .productsanchor:hover, .products .product2-banner .productsanchor:hover, .products .product3-banner .productsanchor:hover {
   background-color: white;
   color: hsl(240deg, 100%, 50%);
 }
-
-.producth2 {
+.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
   margin-bottom: 50px;
 }
 
@@ -801,10 +675,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.product-1,
-.product-2,
-.product-3 {
+.products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
   text-align: center;
   width: 50%;
   margin: 0 auto 30px auto;
@@ -814,8 +685,7 @@ body {
   flex-direction: column;
   align-content: center;
 }
-
-.Shop {
+.products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
@@ -828,8 +698,7 @@ body {
   align-self: center;
   text-decoration: none;
 }
-
-.Shop:hover {
+.products-presentation-label .product-1 .Shop:hover, .products-presentation-label .product-2 .Shop:hover, .products-presentation-label .product-3 .Shop:hover {
   background-color: white;
   color: hsl(240deg, 100%, 50%);
 }
