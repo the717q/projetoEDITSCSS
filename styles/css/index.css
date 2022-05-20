@@ -1,5 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Borders and margin of the body content of the html pages */
+body {
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
 /* Major colors used on the project */
-/* Main content of the page */
+/* Buttons-Mixins */
+/* Forms */
+/* MAIN MENU OF THE PAGES INDEX AND ABOUT US */
+.mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+.mainmenu li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10%;
+}
+.mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.mainmenu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.mainmenu li a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 {
+  width: 29%;
+  text-align: center;
+  display: inline-flex;
+  padding-left: 0;
+}
+.mainmenu-2 .pesquisar-label {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.mainmenu-2 .pesquisar-label:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+.mainmenu1 li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+}
+.mainmenu1 li a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* FOOTER OF THE LOGIN, REGISTAR AND CONTACT US PAGES */
+.footer {
+  margin: 5% 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* ----------------------------------------------------- */
+/* FOOTER OF THE PAGES INDEX.HTML AND ABOUTUS.HTML */
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+.guarantees h4 {
+  text-align: center;
+  background-color: hsl(240deg, 100%, 20%);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
+}
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.submenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10%;
+}
+.submenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.submenu a {
+  text-decoration: none;
+  color: black;
+}
+.submenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 426px) {
+  .guarantees {
+    display: unset;
+  }
+}
+.logo {
+  width: 50px;
+}
+
+/*                                   INDEX.HTML PAGE EDITION BELOW                                */
+.banner {
+  background-image: url(../../assets/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.banner .banner-label {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.banner .banner-label:hover {
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  cursor: default;
+}
+.banner .banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.banner .banner-label h1:hover {
+  cursor: default;
+}
+.banner .banner-label a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px groove white;
+}
+.banner .banner-label a:hover {
+  padding: 10px 10px 10px 10px;
+}
+
+.discover-out-products {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+.discover-out-products h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 8% auto;
+}
+.products .product1-banner, .products .product2-banner, .products .product3-banner {
+  text-align: center;
+  flex: 1;
+}
+.products .product1-banner .product-button, .products .product2-banner .product-button, .products .product3-banner .product-button {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 25%;
+  transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
+}
+.products .product1-banner .product-button:hover, .products .product2-banner .product-button:hover, .products .product3-banner .product-button:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
+  margin-bottom: 50px;
+}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+}
+.products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 30px auto;
+  background-color: orange;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.products-presentation-label .product-1 .Shop-button, .products-presentation-label .product-2 .Shop-button, .products-presentation-label .product-3 .Shop-button {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 25%;
+  transition: background-color 500ms linear, color 500ms linear;
+  align-self: center;
+  text-decoration: none;
+}
+.products-presentation-label .product-1 .Shop-button:hover, .products-presentation-label .product-2 .Shop-button:hover, .products-presentation-label .product-3 .Shop-button:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+
+@media only screen and (max-width: 426px) {
+  nav {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .mainmenu {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainmenu li {
+    margin: 0;
+  }
+  .mainmenu .logo {
+    display: none;
+  }
+
+  .mainmenu-2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner {
+    min-height: 400px;
+    flex-direction: column;
+  }
+  .banner .banner-label {
+    display: block;
+    width: 80%;
+    height: 40%;
+  }
+
+  .discover-out-products {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+  .products .product1-banner, .products .product2-banner, .products .product3-banner {
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .products-presentation-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
+    width: 80%;
+    min-height: 300px;
+    justify-content: center;
+  }
+  .products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
+    width: 50%;
+  }
+  .products-presentation-label .guarantees h4 {
+    text-align: left;
+  }
+}
+/*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
 main .header {
   display: flex;
   align-items: center;
@@ -155,12 +483,13 @@ main .section .opinion2 p {
     border-radius: 0%;
     margin-top: 5%;
   }
-}
-.guarantees h4 {
-  padding: 15px;
-  margin-right: unset;
-}
 
+  .guarantees h4 {
+    padding: 15px;
+    margin-right: unset;
+  }
+}
+/*                                  REGISTAR.HTML PAGE EDITION BELOW                                */
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -168,39 +497,120 @@ main .section .opinion2 p {
   margin: 2% 0% 1% 0%;
 }
 .header-label2 .header-label3 {
+  display: block;
   text-align: center;
 }
 .header-label2 .header-label3 h1 {
+  margin: 20px 10px 20px 10px;
   font-size: 1.5rem;
+}
+.header-label2 .header-label3 h1:hover {
+  cursor: default;
+}
+.header-label2 .header-label3 img {
+  width: 40px;
 }
 
 .main-label1 {
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: center;
 }
-.main-label1 .login-register-forms-label {
-  padding: 0px 15px 15px 15px;
+.main-label1 .login-contactus-forms-label {
+  background-color: hsl(240deg, 100%, 50%);
+  border: 2px groove black;
+  padding: 15px;
   display: block;
   text-align: center;
-  background-color: hsl(240deg, 100%, 60%);
-  border: 1px groove black;
 }
-.main-label1 .login-register-forms-label .h2-form {
+.main-label1 .login-contactus-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
 }
-.main-label1 .login-register-forms-label p {
+.main-label1 .login-contactus-forms-label .h2-form:after {
+  cursor: default;
+}
+.main-label1 .login-contactus-forms-label .agree {
   color: white;
 }
 
-.socialmedia img {
-  display: inlineblock;
-  height: 50px;
-  padding: 0% 1%;
+/*                                  LOGIN.HTML PAGE EDITION BELOW                                */
+.loginmain {
+  margin: 5% 0% 5% 0%;
+  text-align: center;
+}
+.loginmain h1 {
+  margin-bottom: 0%;
+  font-size: 1.5rem;
+  margin: 2% 0% 1% 0%;
+}
+.loginmain h1:hover {
+  cursor: default;
+}
+.loginmain p {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+.loginmain p .userpass {
+  font-weight: 500;
 }
 
+.label1 {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0%;
+}
+.label1 .loginform {
+  background-color: hsl(240deg, 100%, 50%);
+  border: 2px groove black;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.label1 .loginform .usernpass {
+  color: white;
+}
+
+.label2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.label2 h2 {
+  margin: 10px;
+  font-weight: 400;
+}
+.label2 a {
+  color: black;
+  font-size: 1.5rem;
+}
+.label2 a a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 766px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  .label2 {
+    font-size: 1rem;
+  }
+}
+/*                                  FAQ.HTML PAGE EDITION BELOW                                */
 nav {
   display: flex;
   align-items: center;
@@ -289,80 +699,7 @@ ul li a {
     width: 100%;
   }
 }
-.loginmain {
-  margin: 5% 0% 5% 0%;
-  text-align: center;
-}
-.loginmain h1 {
-  margin-bottom: 0%;
-  font-size: 1.5rem;
-  margin: 2% 0% 1% 0%;
-}
-.loginmain h1:hover {
-  cursor: default;
-}
-.loginmain p {
-  font-size: 1.2rem;
-  margin-top: 50px;
-}
-.loginmain p .userpass {
-  font-weight: 500;
-}
-
-.label1 {
-  display: flex;
-  justify-content: center;
-  margin: 2% 0%;
-}
-.label1 .loginform {
-  display: block;
-  text-align: center;
-  background-color: hsl(240deg, 100%, 50%);
-  padding: 20px;
-  border: 1px groove black;
-  margin-top: 20px;
-}
-.label1 .loginform .usernpass {
-  color: white;
-}
-
-.label2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.label2 h2 {
-  margin: 10px;
-  font-weight: 400;
-}
-.label2 a {
-  color: black;
-  font-size: 1.5rem;
-}
-.label2 a a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-@media only screen and (max-width: 766px) {
-  body {
-    font-size: 16px;
-  }
-
-  nav a {
-    font-size: 1.5rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1.5rem;
-  }
-
-  .label2 {
-    font-size: 1rem;
-  }
-}
+/*                                 CONTACTUS.HTML EDITION BELOW                                */
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -370,376 +707,37 @@ ul li a {
   margin: 2% 0% 1% 0%;
 }
 .header-label2 .header-label3 {
-  display: block;
   text-align: center;
 }
 .header-label2 .header-label3 h1 {
-  margin: 20px 10px 20px 10px;
   font-size: 1.5rem;
-}
-.header-label2 .header-label3 h1:hover {
-  cursor: default;
-}
-.header-label2 .header-label3 img {
-  width: 40px;
 }
 
 .main-label1 {
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: center;
 }
-.main-label1 .login-register-forms-label {
-  padding: 0px 15px 15px 15px;
+.main-label1 .login-contactus-forms-label {
+  background-color: hsl(240deg, 100%, 50%);
+  border: 2px groove black;
+  padding: 15px;
   display: block;
   text-align: center;
-  background-color: hsl(240deg, 100%, 60%);
-  border: 1px groove black;
 }
-.main-label1 .login-register-forms-label .h2-form {
+.main-label1 .login-contactus-forms-label .h2-form {
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
 }
-.main-label1 .login-register-forms-label .h2-form:after {
-  cursor: default;
-}
-.main-label1 .login-register-forms-label .agree {
+.main-label1 .login-contactus-forms-label p {
   color: white;
 }
 
-/* Footer of the login, registar and contact us pages */
-.footer {
-  margin: 5% 0%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-}
-.footer h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-/* ----------------------------------------------------- */
-/* footer of the pages index and aboutus */
-.guarantees {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 3%;
-}
-.guarantees h4 {
-  text-align: center;
-  background-color: hsl(240deg, 100%, 20%);
-  color: white;
-  font-weight: 400;
-  padding: 30px;
-  font-size: 16px;
-  margin-right: 5%;
-  letter-spacing: 1px;
-}
-
-.submenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.submenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
-}
-.submenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.submenu a {
-  text-decoration: none;
-  color: black;
-}
-.submenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-@media only screen and (max-width: 426px) {
-  .guarantees {
-    display: unset;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-
-/* Borders and margin of the body content of the html pages */
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
-.logo {
-  width: 50px;
-}
-
-/* ------------------------------------ */
-/* Main menu of the pages index.html and aboutus.html */
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 70%;
-  padding: 0;
-  margin: 0;
-}
-.mainmenu li {
-  list-style: none;
-  padding: 10px;
-  margin-right: 10%;
-}
-.mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-.mainmenu li a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* ------------------------------------ */
-/* Main menu 2 of the pages index.html and aboutus.html */
-.mainmenu-2 {
-  width: 29%;
-  text-align: center;
-  display: inline-flex;
-  padding-left: 0;
-}
-.mainmenu-2 .pesquisar-label {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-}
-.mainmenu-2 .pesquisar-label:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-}
-
-.mainmenu-2 .pesquisar-label:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* ------------------------------------ */
-/* Main menu of the pages Contactus.html, registar.html, login.html */
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-.mainmenu1 li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-}
-.mainmenu1 li a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* ------------------------------------ */
-/* Index.html design below */
-.banner {
-  background-image: url(../../assets/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 300px;
-}
-.banner .banner-label {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-.banner .banner-label:hover {
-  background-color: rgba(0, 0, 0, 0.5803921569);
-  cursor: default;
-}
-.banner .banner-label h1 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.banner .banner-label h1:hover {
-  cursor: default;
-}
-.banner .banner-label a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  border: 2px groove white;
-}
-.banner .banner-label a:hover {
-  padding: 10px 10px 10px 10px;
-}
-
-.discover-out-products {
-  text-align: center;
-  margin: 100px 0px 100px 0px;
-}
-.discover-out-products h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 8% auto;
-}
-.products .product1-banner, .products .product2-banner, .products .product3-banner {
-  text-align: center;
-  flex: 1;
-}
-.products .product1-banner .productsanchor, .products .product2-banner .productsanchor, .products .product3-banner .productsanchor {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  transition: background-color 500ms linear, color 500ms linear;
-  text-decoration: none;
-}
-.products .product1-banner .productsanchor:hover, .products .product2-banner .productsanchor:hover, .products .product3-banner .productsanchor:hover {
-  background-color: white;
-  color: hsl(240deg, 100%, 50%);
-}
-.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
-  margin-bottom: 50px;
-}
-
-.products-presentation-label {
-  display: flex;
-  flex-direction: column;
-}
-.products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto 30px auto;
-  background-color: orange;
-  padding: 2% 5% 2% 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 10px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  transition: background-color 500ms linear, color 500ms linear;
-  width: 25%;
-  align-self: center;
-  text-decoration: none;
-}
-.products-presentation-label .product-1 .Shop:hover, .products-presentation-label .product-2 .Shop:hover, .products-presentation-label .product-3 .Shop:hover {
-  background-color: white;
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* Mobile media query */
-@media only screen and (max-width: 426px) {
-  /* Media query of the menu of the index and about us page (mobile) */
-  nav {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .mainmenu {
-    display: flex;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .mainmenu li {
-    margin: 0;
-  }
-  .mainmenu .logo {
-    display: none;
-  }
-
-  .mainmenu-2 {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .banner {
-    min-height: 400px;
-    flex-direction: column;
-  }
-  .banner .banner-label {
-    display: block;
-    width: 80%;
-    height: 40%;
-  }
-
-  /*------------------------------------------------------------------------------------------ */
-  .discover-out-products {
-    margin: 50px 0px 50px 0px;
-  }
-
-  .products {
-    flex-direction: column;
-  }
-  .products .product1-banner, .products .product2-banner, .products .product3-banner {
-    text-align: center;
-    min-height: 300px;
-  }
-
-  .products-presentation-label {
-    display: flex;
-    flex-direction: column;
-  }
-  .products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
-    width: 80%;
-    min-height: 300px;
-    justify-content: center;
-  }
-  .products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
-    width: 50%;
-  }
-  .products-presentation-label .guarantees h4 {
-    text-align: center;
-  }
+.socialmedia img {
+  display: inlineblock;
+  height: 50px;
+  padding: 0% 1%;
 }
 
 /*# sourceMappingURL=index.css.map */
