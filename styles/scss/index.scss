@@ -1,124 +1,16 @@
+@import "resets.scss";
 @import "variables.scss";
-@import "aboutus.scss";
-@import "contactus.scss";
-@import "faq.scss";
-@import "login.scss";
-@import "registar.scss";
+@import "menus.scss";
 @import "footer.scss";
-
-* {
-  box-sizing: border-box;
-}
-
-/* Borders and margin of the body content of the html pages */
-
-body {
-  font-size: 16px;
-  margin: 10px 10px 10px 10px;
-}
-
 
 
 .logo {
   width: 50px;
 }
 
-/* ------------------------------------ */
 
 
-/* Main menu of the pages index.html and aboutus.html */
-
-.mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 70%;
-  padding: 0;
-  margin: 0;
-  li {
-    list-style: none;
-    padding: 10px;
-    margin-right: 10%;
-    &:hover {
-      border-bottom: 1px solid $blue;
-      color: $blue;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
-}
-
-
-
-/* ------------------------------------ */
-
-
-/* Main menu 2 of the pages index.html and aboutus.html */
-
-.mainmenu-2 {
-  width: 29%;
-  text-align: center;
-  display: inline-flex;
-  padding-left: 0;
-    .pesquisar-label {
-      margin-left: 10px;
-      margin-right: 10px;
-      padding: 10px;
-      &:hover {
-        border-bottom: 1px solid $blue;
-      }
-  }
-}
-
-.mainmenu-2 .pesquisar-label:hover {
-  color: $blue;
-}
-
-
-/* ------------------------------------ */
-
-
-/* Main menu of the pages Contactus.html, registar.html, login.html */
-
-
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    &:hover {
-      border-bottom: 1px solid $blue;
-      color: $blue;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-      &:hover {
-        color: $blue;
-    }
-  }
-}
-}
-
-
-
-
-/* ------------------------------------ */
-
-
-/* Index.html design below */
+/*                                   INDEX.HTML PAGE EDITION BELOW                                */
   
 .banner {
   background-image: url(../../assets/header.jpg);
@@ -187,20 +79,11 @@ body {
       text-align: center;
       flex: 1;
 
-      .productsanchor {
-        background-color: $blue;
-        color: white;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        padding: 10px 30px;
-        border: 1px solid $blue;
+      .product-button {
+        @include button-details($blue, 25%);
         transition: background-color 500ms linear, color 500ms linear;
         text-decoration: none;
-          &:hover {
-            background-color: white;
-            color: $blue;
-        }
+        @include buttons-hover($darkblue)
       }
 
       .producth2 {
@@ -226,34 +109,19 @@ body {
       flex-direction: column;
       align-content: center;
 
-      .Shop {
-        background-color: $blue;
-        color: white;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        padding: 10px 10px;
-        border: 1px solid $blue;
+      .Shop-button {
+        @include button-details($blue, 25%);
         transition: background-color 500ms linear, color 500ms linear;
-        width: 25%;
         align-self: center;
         text-decoration: none;
-          &:hover {
-              background-color: white;
-              color: $blue;
-            }
+        @include buttons-hover($darkblue)
         }
       }   
 }
 
 
-/* Mobile media query */
-
-
 @media only screen and (max-width: 426px) {
 
-  
-  /* Media query of the menu of the index and about us page (mobile) */
 
   nav {
     display:block;
@@ -290,8 +158,6 @@ body {
         height: 40%;
       }
   }
-  /*------------------------------------------------------------------------------------------ */
-
 
   .discover-out-products  {
     margin: 50px 0px 50px 0px;
@@ -326,3 +192,459 @@ body {
   }
 
 }
+
+
+/*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
+  
+
+
+main {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../../assets/aboutusheader.jpg");
+    background-position: center;
+    background-size: cover;
+      .block {
+        display: block;
+        width: 50%;
+        text-align: center;
+          h1 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 48px;
+              span {
+              color: $darkblue;
+            }
+          }
+          p {
+            color: white;
+            line-height: 40px;
+            font-size: 24px;
+          }
+          .main-img {
+            width: 20%;
+          }
+      }
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 10% 0%;
+      margin: 2% 0%;
+      background-color: $darkblue;
+        .avaliation {
+          width: 20%;
+          margin-right: 2%;
+          background-color: $lightblue;
+          border-radius: 5%;
+          color: white;
+            h2 {
+            color: hsl(0, 100%, 100%, 1);
+            text-align: center;
+            margin: 30px 30px 0px 30px;
+              span {
+                color: $darkblue;
+              }
+            }
+            p {
+              color: white;
+              line-height: 20px;
+              text-align: center;
+              margin: 10px 30px 30px 30px;
+            }
+        }
+        .opinion1 {
+          display:flex;
+          flex-direction: column;
+          width: 30%;
+          margin-right: 2%;
+          background-color: $lightblue;
+          border-radius: 5%;
+          min-height: 500px;
+          align-items: center;
+          justify-content:center;
+          text-align: center;
+          h2 {
+            font-size: 36px;
+            color: $darkblue;
+          }
+          h3 {
+            color: hsl(0, 100%, 100%, 1);
+            span {
+              color: $darkblue;
+            }
+          }
+          .opinionimg {
+            border: 10px solid white;
+            width: 80px;
+            p {
+              line-height: 30px;
+              color: white;
+              padding:0px 20px;
+            }
+}
+
+        }
+        .opinion2 {
+          background-color: $lightblue;
+          width: 30%;
+          border-radius: 5%;
+          min-height: 500px;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:center;
+          text-align: center;
+          margin-right: 2%;
+          
+              h2 {
+              font-size: 36px;
+              color: $darkblue;
+            }
+              h3 {
+              color: hsl(0, 100%, 100%, 1);
+                span {
+                  color: $darkblue;
+              }
+            }
+            .opinionimg {
+              border: 10px solid white;
+              width: 80px;
+            }
+              p {
+              line-height: 30px;
+              color: white;
+              padding:0px 20px;
+            }
+        }
+      }
+  }
+
+
+.opinion1 p,
+.opinion2 p {
+  line-height: 30px;
+  color: white;
+  padding:0px 20px;
+}
+
+
+/* Mobile Media Query */
+
+@media only screen and (max-width: 425px) {
+  main .header .block {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+  
+  main {
+  .section {
+    flex-direction: column;
+    .avaliation {
+      width: 80%;
+      border-radius: 0%;
+    }
+    .opinion1 {
+      width: 80%;
+      border-radius: 0%;
+      margin-top: 5%;
+    }
+    .opinion2 {
+      width: 80%;
+      border-radius: 0%;
+      margin-top: 5%;
+
+    }
+  }
+  }
+  .guarantees h4 {
+    padding: 15px;
+    margin-right: unset;
+  }
+}
+
+
+
+
+/*                                  REGISTAR.HTML PAGE EDITION BELOW                                */
+
+
+.header-label2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0% 1% 0%;
+
+    .header-label3 {
+      display: block;
+      text-align: center;
+         h1 {
+            margin: 20px 10px 20px 10px;
+            font-size: 1.5rem;
+            &:hover {
+              cursor: default;
+            }
+          }
+
+    img {
+      width: 40px;
+    }
+  }
+}
+
+
+.main-label1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .login-contactus-forms-label {
+    @include forms($blue);
+    display: block;
+    text-align: center;
+
+    .h2-form {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+        &:after {
+          cursor: default;
+        }    
+      }
+      
+    .agree {
+      color: white;
+    }
+  }  
+}
+
+
+/*                                  LOGIN.HTML PAGE EDITION BELOW                                */
+
+
+.loginmain {
+  margin: 5% 0% 5% 0%;
+  text-align: center;
+  h1 {
+    margin-bottom: 0%;
+    font-size: 1.5rem;
+    margin: 2% 0% 1% 0%;
+      &:hover {
+        cursor: default;
+      }
+    }
+  p {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    .userpass {
+      font-weight: 500;
+    }
+  }
+}
+
+
+.label1 {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0%;
+
+    .loginform {
+    @include forms($blue);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    
+    .usernpass {
+      color: white;
+    }
+  }
+}
+
+
+.label2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  h2 {
+    margin: 10px;
+    font-weight: 400;
+  }
+  a {
+    color: black;
+    font-size: 1.5rem;
+    a:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+  .label2 {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+
+/*                                  FAQ.HTML PAGE EDITION BELOW                                */
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+
+.header-label1 {
+  justify-content: center;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+    h1 {
+    margin-right: 20px;
+    padding-bottom: 10px;
+      &:hover {
+        border-bottom: 1px solid $blue;
+        color: $blue;
+        cursor: default;
+      }
+    }
+  }
+
+ul li {
+  list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  
+}
+
+.main-contact-us {
+  display: flex;
+    .faq {
+    text-align: center;
+    flex: 1;
+    .main-label2 {
+      text-align: center;
+      margin: 5% 0% 2% 0%;
+    }
+    .qanda {
+      margin: 4% 0% 4% 0%;
+      border-bottom: 1px solid black;
+        .question {
+          display: inline-block;
+      }
+        img {
+          vertical-align: middle;
+      }
+        .answer {
+          margin: 0%;
+          padding: 20px;
+      }
+    }
+  }
+}
+
+
+.asb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+    img {
+      margin: 0px 0px 20px 0px;
+      width: 60%;
+      height: 400px;
+    }
+}
+
+
+/* Mobile Media Query */
+
+@media screen and (max-width: 426px) {
+  .main-contact-us {
+    display: block;
+  }
+
+  .asb img {
+    width: 80%;
+  }
+
+  .header-label1 {
+    width: 100%;
+  } 
+
+}
+
+/*                                 CONTACTUS.HTML EDITION BELOW                                */
+
+
+.header-label2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0% 1% 0%;
+    .header-label3 {
+    text-align: center;
+       h1 {
+        font-size: 1.5rem;
+      }
+    }
+}
+
+
+.main-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-contactus-forms-label {
+    @include forms($blue);
+    display: block;
+    text-align: center;
+    .h2-form {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+.socialmedia img {
+  display: inlineblock;
+  height: 50px;
+  padding: 0% 1%;
+}
+
