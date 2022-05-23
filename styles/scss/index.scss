@@ -4,10 +4,6 @@
 @import "footer.scss";
 
 
-.logo {
-  width: 50px;
-}
-
 
 
 /*                                   INDEX.HTML PAGE EDITION BELOW                                */
@@ -80,7 +76,7 @@
       flex: 1;
 
       .product-button {
-        @include button-details($blue, 25%);
+        @include button-details($blue, 25%, 20px);
         transition: background-color 500ms linear, color 500ms linear;
         text-decoration: none;
         @include buttons-hover($darkblue)
@@ -110,43 +106,17 @@
       align-content: center;
 
       .Shop-button {
-        @include button-details($blue, 25%);
+        @include button-details($blue, 25%, 20px);
         transition: background-color 500ms linear, color 500ms linear;
         align-self: center;
         text-decoration: none;
-        @include buttons-hover($darkblue)
+        @include buttons-hover($darkblue);
         }
       }   
 }
 
 
 @media only screen and (max-width: 426px) {
-
-
-  nav {
-    display:block;
-    margin-bottom: 20px;
-  }
-
-  .mainmenu {
-    display: flex;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-    li {
-      margin: 0;
-    }
-    .logo {
-      display: none;
-    }
-  }
-
-
-  .mainmenu-2 {
-    display: block;
-    width: 100%;
-    text-align:center;
-  }
 
 
   .banner {
@@ -511,18 +481,6 @@ main {
 /*                                  FAQ.HTML PAGE EDITION BELOW                                */
 
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
-ul {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-}
-
-
 .header-label1 {
   justify-content: center;
   display: inline-flex;
@@ -648,3 +606,22 @@ ul li {
   padding: 0% 1%;
 }
 
+
+/*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
+
+
+.checkout-page {
+  display:flex;
+    .shipping-label {
+      width: 50%;
+      .shipping-headers {
+          h3 {
+            text-transform: uppercase;
+            font-size: 1em;
+            background-color: $fadeout-blue;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+      }
+    }
+  }

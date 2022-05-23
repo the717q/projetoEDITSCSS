@@ -1,12 +1,17 @@
-/* MAIN MENU OF THE PAGES INDEX AND ABOUT US */
+/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
+
+.navigation-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 .mainmenu {
     justify-content: center;
     display: inline-flex;
     align-items: center;
-    width: 70%;
     padding: 0;
     margin: 0;
+    min-width: 60%;
     li {
       list-style: none;
       padding: 10px;
@@ -23,15 +28,19 @@
           color: $blue;
         }
       }
+      .logo {
+        width: 50px;
+      }
     }
   }
+}
+
 
   
 .mainmenu-2 {
-    width: 29%;
     text-align: center;
     display: inline-flex;
-    padding-left: 0;
+    margin-right: 20px;
       .pesquisar-label {
         margin-left: 10px;
         margin-right: 10px;
@@ -45,6 +54,34 @@
   .mainmenu-2 .pesquisar-label:hover {
     color: $blue;
   }
+
+  @media only screen and (max-width: 426px) {
+
+
+    .navigation-label1 {
+      display:block;
+      margin-bottom: 20px;
+  
+    .mainmenu {
+      display: flex;
+      text-align: left;
+      margin-bottom: 10px;
+      width: 100%;
+      li {
+        margin: 0;
+      }
+      .logo {
+        display: none;
+      }
+    }
+  }
+  }
+  
+  
+    .mainmenu-2 {
+      display: block;
+      text-align:center;
+    }
 
 
 /* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
@@ -75,3 +112,60 @@
   }
   }
   
+
+  /* MAIN MENU OF THE CHECKOUT PAGE */
+
+.checkout-label1 {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  .banner-label-checkout {
+    display: inline-flex;
+    align-items: center;
+    .logo {
+      width: 50px;
+      margin: 20px;
+    }
+    h1 {
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 20px;
+      font-weight: 300;
+      padding: 10px;
+      color: white;
+        &:hover {
+          color: white;
+          border-bottom: 1px solid white;
+          cursor: default;
+      }
+    }
+  }
+
+.banner-label2-checkout {
+  display: inline-flex;
+  align-items: center;
+  h2 {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+      &:hover {
+        color: white;
+        border-bottom: 1px solid white;
+      cursor: default;
+}
+  }
+  a {
+    @include button-details($blue, 100px, 0px);
+    @include buttons-hover($darkblue);
+    transition: background-color 500ms linear, color 500ms linear;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+}
+}

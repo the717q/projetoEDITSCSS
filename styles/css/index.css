@@ -9,40 +9,48 @@ body {
 }
 
 /* Major colors used on the project */
+/* FADEOUT COLORS used on the project */
 /* Buttons-Mixins */
 /* Forms */
-/* MAIN MENU OF THE PAGES INDEX AND ABOUT US */
-.mainmenu {
+/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
+.navigation-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-label1 .mainmenu {
   justify-content: center;
   display: inline-flex;
   align-items: center;
-  width: 70%;
   padding: 0;
   margin: 0;
+  min-width: 60%;
 }
-.mainmenu li {
+.navigation-label1 .mainmenu li {
   list-style: none;
   padding: 10px;
   margin-right: 10%;
 }
-.mainmenu li:hover {
+.navigation-label1 .mainmenu li:hover {
   border-bottom: 1px solid hsl(240deg, 100%, 50%);
   color: hsl(240deg, 100%, 50%);
 }
-.mainmenu li a {
+.navigation-label1 .mainmenu li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
 }
-.mainmenu li a:hover {
+.navigation-label1 .mainmenu li a:hover {
   color: hsl(240deg, 100%, 50%);
+}
+.navigation-label1 .mainmenu li .logo {
+  width: 50px;
 }
 
 .mainmenu-2 {
-  width: 29%;
   text-align: center;
   display: inline-flex;
-  padding-left: 0;
+  margin-right: 20px;
 }
 .mainmenu-2 .pesquisar-label {
   margin-left: 10px;
@@ -55,6 +63,29 @@ body {
 
 .mainmenu-2 .pesquisar-label:hover {
   color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 426px) {
+  .navigation-label1 {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .navigation-label1 .mainmenu {
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .navigation-label1 .mainmenu li {
+    margin: 0;
+  }
+  .navigation-label1 .mainmenu .logo {
+    display: none;
+  }
+}
+.mainmenu-2 {
+  display: block;
+  text-align: center;
 }
 
 /* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
@@ -81,6 +112,71 @@ body {
 }
 .mainmenu1 li a:hover {
   color: hsl(240deg, 100%, 50%);
+}
+
+/* MAIN MENU OF THE CHECKOUT PAGE */
+.checkout-label1 {
+  background-color: hsl(240deg, 100%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-label1 .banner-label-checkout {
+  display: inline-flex;
+  align-items: center;
+}
+.checkout-label1 .banner-label-checkout .logo {
+  width: 50px;
+  margin: 20px;
+}
+.checkout-label1 .banner-label-checkout h1 {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px;
+  font-weight: 300;
+  padding: 10px;
+  color: white;
+}
+.checkout-label1 .banner-label-checkout h1:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: default;
+}
+.checkout-label1 .banner-label2-checkout {
+  display: inline-flex;
+  align-items: center;
+}
+.checkout-label1 .banner-label2-checkout h2 {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+.checkout-label1 .banner-label2-checkout h2:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: default;
+}
+.checkout-label1 .banner-label2-checkout a {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 100px;
+  transition: background-color 500ms linear, color 500ms linear;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.checkout-label1 .banner-label2-checkout a:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
 }
 
 /* FOOTER OF THE LOGIN, REGISTAR AND CONTACT US PAGES */
@@ -147,10 +243,6 @@ body {
     display: unset;
   }
 }
-.logo {
-  width: 50px;
-}
-
 /*                                   INDEX.HTML PAGE EDITION BELOW                                */
 .banner {
   background-image: url(../../assets/header.jpg);
@@ -265,30 +357,6 @@ body {
 }
 
 @media only screen and (max-width: 426px) {
-  nav {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .mainmenu {
-    display: flex;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .mainmenu li {
-    margin: 0;
-  }
-  .mainmenu .logo {
-    display: none;
-  }
-
-  .mainmenu-2 {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
   .banner {
     min-height: 400px;
     flex-direction: column;
@@ -611,17 +679,6 @@ main .section .opinion2 p {
   }
 }
 /*                                  FAQ.HTML PAGE EDITION BELOW                                */
-nav {
-  display: flex;
-  align-items: center;
-}
-
-ul {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-}
-
 .header-label1 {
   justify-content: center;
   display: inline-flex;
@@ -738,6 +795,21 @@ ul li a {
   display: inlineblock;
   height: 50px;
   padding: 0% 1%;
+}
+
+/*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
+.checkout-page {
+  display: flex;
+}
+.checkout-page .shipping-label {
+  width: 50%;
+}
+.checkout-page .shipping-label .shipping-headers h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: rgba(0, 0, 255, 0.5);
+  margin: 10px 0px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
