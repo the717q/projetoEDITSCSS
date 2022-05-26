@@ -11,7 +11,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    min-width: 60%;
+    min-width: 70%;
     li {
       list-style: none;
       padding: 10px;
@@ -123,30 +123,30 @@
   .banner-label-checkout {
     display: inline-flex;
     align-items: center;
-    .logo {
-      width: 50px;
-      margin: 20px;
-    }
-    h1 {
-      text-decoration: none;
-      font-size: 16px;
-      text-transform: uppercase;
-      margin: 20px;
-      font-weight: 300;
-      padding: 10px;
-      color: white;
-        &:hover {
-          color: white;
-          border-bottom: 1px solid white;
-          cursor: default;
+      .logo {
+        width: 50px;
+        margin: 20px;
+      }
+      h1 {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: 300;
+        padding: 10px;
+        color: white;
+          &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+            cursor: default;
+        }
       }
     }
-  }
 
 .banner-label2-checkout {
   display: inline-flex;
   align-items: center;
-  h2 {
+  h1 {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
@@ -166,6 +166,6 @@
     transition: background-color 500ms linear, color 500ms linear;
     margin-right: 10px;
     text-decoration: none;
+    }
   }
-}
 }

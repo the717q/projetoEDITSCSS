@@ -1,0 +1,19 @@
+/* Major colors used on the project */
+
+$blue: hsla(240, 100%, 50%, 1);
+
+$darkblue:hsla(240, 100%, 20%, 1);
+
+$lightblue: hsla(240, 100%, 80%, 0.6);
+
+$orange: #ffa500;
+
+/* FADEOUT COLORS used on the project */
+
+$fade-out-ammount: 0.5; 
+
+$fadeout-blue: fade-out($blue, $fade-out-ammount);
+
+$fadeout-orange: fade-out($orange, 0.2);
+
+

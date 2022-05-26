@@ -1,0 +1,175 @@
+/*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
+  
+
+
+main {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-image: url("../../assets/aboutusheader.jpg");
+      background-position: center;
+      background-size: cover;
+        .block {
+          display: block;
+          width: 50%;
+          text-align: center;
+            h1 {
+              color: white;
+              text-transform: uppercase;
+              font-size: 48px;
+                span {
+                color: $darkblue;
+              }
+            }
+            p {
+              color: white;
+              line-height: 40px;
+              font-size: 24px;
+            }
+            .main-img {
+              width: 20%;
+            }
+        }
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10% 0%;
+        margin: 2% 0%;
+        background-color: $darkblue;
+          .avaliation {
+            width: 20%;
+            margin-right: 2%;
+            background-color: $lightblue;
+            border-radius: 5%;
+            color: white;
+              h2 {
+              color: hsl(0, 100%, 100%, 1);
+              text-align: center;
+              margin: 30px 30px 0px 30px;
+                span {
+                  color: $darkblue;
+                }
+              }
+              p {
+                color: white;
+                line-height: 20px;
+                text-align: center;
+                margin: 10px 30px 30px 30px;
+              }
+          }
+          .opinion1 {
+            display:flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right: 2%;
+            background-color: $lightblue;
+            border-radius: 5%;
+            min-height: 500px;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
+            h2 {
+              font-size: 36px;
+              color: $darkblue;
+            }
+            h3 {
+              color: hsl(0, 100%, 100%, 1);
+              span {
+                color: $darkblue;
+              }
+            }
+            .opinionimg {
+              border: 10px solid white;
+              width: 80px;
+              p {
+                line-height: 30px;
+                color: white;
+                padding:0px 20px;
+              }
+  }
+  
+          }
+          .opinion2 {
+            background-color: $lightblue;
+            width: 30%;
+            border-radius: 5%;
+            min-height: 500px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
+            margin-right: 2%;
+            
+                h2 {
+                font-size: 36px;
+                color: $darkblue;
+              }
+                h3 {
+                color: hsl(0, 100%, 100%, 1);
+                  span {
+                    color: $darkblue;
+                }
+              }
+              .opinionimg {
+                border: 10px solid white;
+                width: 80px;
+              }
+                p {
+                line-height: 30px;
+                color: white;
+                padding:0px 20px;
+              }
+          }
+        }
+    }
+  
+  
+  .opinion1 p,
+  .opinion2 p {
+    line-height: 30px;
+    color: white;
+    padding:0px 20px;
+  }
+  
+  
+  /* Mobile Media Query */
+  
+  @media only screen and (max-width: 425px) {
+    main .header .block {
+      display: block;
+      width: 80%;
+      text-align: center;
+    }
+    
+    main {
+    .section {
+      flex-direction: column;
+      .avaliation {
+        width: 80%;
+        border-radius: 0%;
+      }
+      .opinion1 {
+        width: 80%;
+        border-radius: 0%;
+        margin-top: 5%;
+      }
+      .opinion2 {
+        width: 80%;
+        border-radius: 0%;
+        margin-top: 5%;
+  
+      }
+    }
+    }
+    .guarantees h4 {
+      padding: 15px;
+      margin-right: unset;
+    }
+  }
+  
