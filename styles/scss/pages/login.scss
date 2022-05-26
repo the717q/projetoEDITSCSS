@@ -1,0 +1,80 @@
+/*                                  LOGIN.HTML PAGE EDITION BELOW                                */
+
+
+.loginmain {
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+    h1 {
+      margin-bottom: 0%;
+      font-size: 1.5rem;
+      margin: 2% 0% 1% 0%;
+        &:hover {
+          cursor: default;
+        }
+      }
+    p {
+      font-size: 1.2rem;
+      margin-top: 50px;
+      .userpass {
+        font-weight: 500;
+      }
+    }
+  }
+  
+  
+  .label1 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+  
+      .loginform {
+      @include forms($blue, 10px);
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      
+      .usernpass {
+        color: white;
+      }
+    }
+  }
+  
+  
+  .label2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    h2 {
+      margin: 10px;
+      font-weight: 400;
+    }
+    a {
+      color: black;
+      font-size: 1.5rem;
+      a:hover {
+        color: $blue;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 766px) {
+    body {
+      font-size: 16px;
+    }
+  
+    nav a {
+      font-size: 1.5rem;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1.5rem;
+    }
+    .label2 {
+      font-size: 1rem;
+    }
+  
+  }
+  

@@ -12,6 +12,10 @@
       font-weight: 600;
       font-size: 1.5rem;
     }
+    .socialmedia img {
+      height: 50px;
+      padding: 0% 1%;
+    }
 }
 
 
@@ -71,5 +75,8 @@
   
   .guarantees {
     display: unset;
+    .guarantees h4 {
+      text-align:left;
+          }
   }
 }

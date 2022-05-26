@@ -15,6 +15,7 @@
               <li><a href="./registar.html" class="button">Register</a></li>
               <li><img src="assets/logo1HDFile.png" class="logo" alt="logo" /></li>
               <li><a href="./aboutus.html" class="button">About us</a></li>
+              <li><a href="./index.html" class="button">Return to the Main Page</a></li>
             </ul>
         </nav>
         <nav class="checkout-label1">
@@ -23,7 +24,7 @@
                 <h1>Checkout</h1>
             </div>
             <div class="banner-label2-checkout">
-                <h2>Have an Account?</h2>
+                <h1>Have an Account?</h1>
                 <a href="login.html" class="login">Login</a> 
             </div>
         </nav>
@@ -31,11 +32,37 @@
     <main class="checkout-page">
         <section class="shipping-label">
             <div class="shipping-headers">
-                <h3>Shipping</h3>
-                <p>Shipping Adress</p>
+                <h2>Shipping</h2>
             </div>
-            <form>
-                
+            <form class="checkout-page-form">
+                <div class="shipping-adress">
+                    <h3>Shipping Adress</h3>  
+                    <input type="text" name="first-name" class="form-control-dif"  placeholder="Enter your first Name" required>
+                    <input type="text" name="last-name" class="form-control-dif"  placeholder="Enter your last Name" required>
+                    <input type="text" name="adress" class="form-control" placeholder="Enter your Adress" required>
+                    <input type="text" name="city" class="form-control-dif" placeholder="City" required>
+                    <input type="text" name="province" class="form-control-dif" placeholder="Province" required>
+                    <input type="number" name="postal-code" class="form-control-dif"  placeholder="Postal-code" required><br>
+                    <a href="#payment" class="shipping-button">Continue</a>
+                </div>
+                <div id="payment">
+                    <h3>Payment</h3>
+                    <a href="#delivery-contact" class="shipping-button">Continue</a>
+                </div>
+                <div id="delivery-contact">
+                    <h3>Contact Information</h3>
+                    <input type="text" name="firstname" class="form-control-dif" placeholder="Enter your first Name" required>
+                    <input type="text" name="Lastname" class="form-control-dif" placeholder="Enter your last Name" required>
+                    <input type="text" name="email-adress" class="form-control" placeholder="Enter your Email-Adress" required>
+                    <input type="number" name="phone-3-digits" class="form-phone-first-digits" placeholder="+351" required>
+                    <input type="number" name="phone-number" class="form-control-dif"  placeholder="Example: 912323232" required><br>
+                    <a href="#submit" class="shipping-button">Continue</a>
+                </div>
+                <div id="submit">
+                    <label for="i-agree">I agree with the terms of conditions</label>
+                    <input type="radio" id="i-agree" name="i-agree-with-terms-and-conditions" required><br>
+                    <input type="submit" value="Submit" class="submit-button">
+                </div>
             </form>
         </section>
     </main>

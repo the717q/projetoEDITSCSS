@@ -12,389 +12,6 @@ body {
 /* FADEOUT COLORS used on the project */
 /* Buttons-Mixins */
 /* Forms */
-/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
-.navigation-label1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navigation-label1 .mainmenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  min-width: 60%;
-}
-.navigation-label1 .mainmenu li {
-  list-style: none;
-  padding: 10px;
-  margin-right: 10%;
-}
-.navigation-label1 .mainmenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.navigation-label1 .mainmenu li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-.navigation-label1 .mainmenu li a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-.navigation-label1 .mainmenu li .logo {
-  width: 50px;
-}
-
-.mainmenu-2 {
-  text-align: center;
-  display: inline-flex;
-  margin-right: 20px;
-}
-.mainmenu-2 .pesquisar-label {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-}
-.mainmenu-2 .pesquisar-label:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-}
-
-.mainmenu-2 .pesquisar-label:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-@media only screen and (max-width: 426px) {
-  .navigation-label1 {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .navigation-label1 .mainmenu {
-    display: flex;
-    text-align: left;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .navigation-label1 .mainmenu li {
-    margin: 0;
-  }
-  .navigation-label1 .mainmenu .logo {
-    display: none;
-  }
-}
-.mainmenu-2 {
-  display: block;
-  text-align: center;
-}
-
-/* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
-.mainmenu1 {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.mainmenu1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-.mainmenu1 li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.mainmenu1 li a {
-  text-decoration: none;
-  color: black;
-}
-.mainmenu1 li a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-/* MAIN MENU OF THE CHECKOUT PAGE */
-.checkout-label1 {
-  background-color: hsl(240deg, 100%, 50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.checkout-label1 .banner-label-checkout {
-  display: inline-flex;
-  align-items: center;
-}
-.checkout-label1 .banner-label-checkout .logo {
-  width: 50px;
-  margin: 20px;
-}
-.checkout-label1 .banner-label-checkout h1 {
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 20px;
-  font-weight: 300;
-  padding: 10px;
-  color: white;
-}
-.checkout-label1 .banner-label-checkout h1:hover {
-  color: white;
-  border-bottom: 1px solid white;
-  cursor: default;
-}
-.checkout-label1 .banner-label2-checkout {
-  display: inline-flex;
-  align-items: center;
-}
-.checkout-label1 .banner-label2-checkout h2 {
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 10px;
-  padding: 10px;
-  color: white;
-}
-.checkout-label1 .banner-label2-checkout h2:hover {
-  color: white;
-  border-bottom: 1px solid white;
-  cursor: default;
-}
-.checkout-label1 .banner-label2-checkout a {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 0px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  width: 100px;
-  transition: background-color 500ms linear, color 500ms linear;
-  margin-right: 10px;
-  text-decoration: none;
-}
-.checkout-label1 .banner-label2-checkout a:hover {
-  color: hsl(240deg, 100%, 20%);
-  background-color: white;
-}
-
-/* FOOTER OF THE LOGIN, REGISTAR AND CONTACT US PAGES */
-.footer {
-  margin: 5% 0%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-}
-.footer h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-/* ----------------------------------------------------- */
-/* FOOTER OF THE PAGES INDEX.HTML AND ABOUTUS.HTML */
-.guarantees {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 3%;
-}
-.guarantees h4 {
-  text-align: center;
-  background-color: hsl(240deg, 100%, 20%);
-  color: white;
-  font-weight: 400;
-  padding: 30px;
-  font-size: 16px;
-  margin-right: 5%;
-  letter-spacing: 1px;
-}
-
-.submenu {
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.submenu li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10%;
-}
-.submenu li:hover {
-  border-bottom: 1px solid hsl(240deg, 100%, 50%);
-  color: hsl(240deg, 100%, 50%);
-}
-.submenu a {
-  text-decoration: none;
-  color: black;
-}
-.submenu a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-@media only screen and (max-width: 426px) {
-  .guarantees {
-    display: unset;
-  }
-}
-/*                                   INDEX.HTML PAGE EDITION BELOW                                */
-.banner {
-  background-image: url(../../assets/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 300px;
-}
-.banner .banner-label {
-  width: 20%;
-  text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-.banner .banner-label:hover {
-  background-color: rgba(0, 0, 0, 0.5803921569);
-  cursor: default;
-}
-.banner .banner-label h1 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.banner .banner-label h1:hover {
-  cursor: default;
-}
-.banner .banner-label a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  border: 2px groove white;
-}
-.banner .banner-label a:hover {
-  padding: 10px 10px 10px 10px;
-}
-
-.discover-out-products {
-  text-align: center;
-  margin: 100px 0px 100px 0px;
-}
-.discover-out-products h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 8% auto;
-}
-.products .product1-banner, .products .product2-banner, .products .product3-banner {
-  text-align: center;
-  flex: 1;
-}
-.products .product1-banner .product-button, .products .product2-banner .product-button, .products .product3-banner .product-button {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  width: 25%;
-  transition: background-color 500ms linear, color 500ms linear;
-  text-decoration: none;
-}
-.products .product1-banner .product-button:hover, .products .product2-banner .product-button:hover, .products .product3-banner .product-button:hover {
-  color: hsl(240deg, 100%, 20%);
-  background-color: white;
-}
-.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
-  margin-bottom: 50px;
-}
-
-.products-presentation-label {
-  display: flex;
-  flex-direction: column;
-}
-.products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto 30px auto;
-  background-color: orange;
-  padding: 2% 5% 2% 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.products-presentation-label .product-1 .Shop-button, .products-presentation-label .product-2 .Shop-button, .products-presentation-label .product-3 .Shop-button {
-  background-color: hsl(240deg, 100%, 50%);
-  color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  padding: 10px 30px;
-  border: 1px solid hsl(240deg, 100%, 50%);
-  width: 25%;
-  transition: background-color 500ms linear, color 500ms linear;
-  align-self: center;
-  text-decoration: none;
-}
-.products-presentation-label .product-1 .Shop-button:hover, .products-presentation-label .product-2 .Shop-button:hover, .products-presentation-label .product-3 .Shop-button:hover {
-  color: hsl(240deg, 100%, 20%);
-  background-color: white;
-}
-
-@media only screen and (max-width: 426px) {
-  .banner {
-    min-height: 400px;
-    flex-direction: column;
-  }
-  .banner .banner-label {
-    display: block;
-    width: 80%;
-    height: 40%;
-  }
-
-  .discover-out-products {
-    margin: 50px 0px 50px 0px;
-  }
-
-  .products {
-    flex-direction: column;
-  }
-  .products .product1-banner, .products .product2-banner, .products .product3-banner {
-    text-align: center;
-    min-height: 300px;
-  }
-
-  .products-presentation-label {
-    display: flex;
-    flex-direction: column;
-  }
-  .products-presentation-label .product-1, .products-presentation-label .product-2, .products-presentation-label .product-3 {
-    width: 80%;
-    min-height: 300px;
-    justify-content: center;
-  }
-  .products-presentation-label .product-1 .Shop, .products-presentation-label .product-2 .Shop, .products-presentation-label .product-3 .Shop {
-    width: 50%;
-  }
-  .products-presentation-label .guarantees h4 {
-    text-align: left;
-  }
-}
 /*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
 main .header {
   display: flex;
@@ -557,7 +174,95 @@ main .section .opinion2 p {
     margin-right: unset;
   }
 }
-/*                                  REGISTAR.HTML PAGE EDITION BELOW                                */
+/*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
+.checkout-page {
+  display: flex;
+}
+.checkout-page .shipping-label {
+  width: 50%;
+}
+.checkout-page .shipping-label .shipping-headers h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: rgba(0, 0, 255, 0.5);
+  margin: 10px 0px;
+  padding: 10px;
+}
+.checkout-page .shipping-label .checkout-page-form {
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+  padding: 10px 20px 10px 20px;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress, .checkout-page .shipping-label .checkout-page-form #payment, .checkout-page .shipping-label .checkout-page-form #delivery-contact, .checkout-page .shipping-label .checkout-page-form #submit {
+  margin: 40px 0px 40px 0px;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress h3, .checkout-page .shipping-label .checkout-page-form #payment h3, .checkout-page .shipping-label .checkout-page-form #delivery-contact h3, .checkout-page .shipping-label .checkout-page-form #submit h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress h3:hover, .checkout-page .shipping-label .checkout-page-form #payment h3:hover, .checkout-page .shipping-label .checkout-page-form #delivery-contact h3:hover, .checkout-page .shipping-label .checkout-page-form #submit h3:hover {
+  cursor: default;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control-dif, .checkout-page .shipping-label .checkout-page-form #payment .form-control-dif, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control-dif, .checkout-page .shipping-label .checkout-page-form #submit .form-control-dif {
+  display: inline-block;
+  width: 49%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2%;
+  margin-bottom: 20px;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control, .checkout-page .shipping-label .checkout-page-form #payment .form-control, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control, .checkout-page .shipping-label .checkout-page-form #submit .form-control {
+  width: 99%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2%;
+  margin-bottom: 20px;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #payment .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #submit .form-phone-first-digits {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2%;
+  margin-bottom: 20px;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress a, .checkout-page .shipping-label .checkout-page-form #payment a, .checkout-page .shipping-label .checkout-page-form #delivery-contact a, .checkout-page .shipping-label .checkout-page-form #submit a {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 100px;
+  transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
+}
+.checkout-page .shipping-label .checkout-page-form .shipping-adress a:hover, .checkout-page .shipping-label .checkout-page-form #payment a:hover, .checkout-page .shipping-label .checkout-page-form #delivery-contact a:hover, .checkout-page .shipping-label .checkout-page-form #submit a:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+.checkout-page .shipping-label .checkout-page-form #si-agree {
+  margin-bottom: 30px;
+}
+.checkout-page .shipping-label .checkout-page-form .submit-button {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 150px;
+  transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.checkout-page .shipping-label .checkout-page-form .submit-button:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+
+/*                                 CONTACTUS.HTML EDITION BELOW                                */
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -565,29 +270,21 @@ main .section .opinion2 p {
   margin: 2% 0% 1% 0%;
 }
 .header-label2 .header-label3 {
-  display: block;
   text-align: center;
 }
 .header-label2 .header-label3 h1 {
-  margin: 20px 10px 20px 10px;
   font-size: 1.5rem;
-}
-.header-label2 .header-label3 h1:hover {
-  cursor: default;
-}
-.header-label2 .header-label3 img {
-  width: 40px;
 }
 
 .main-label1 {
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: center;
 }
 .main-label1 .login-contactus-forms-label {
   background-color: hsl(240deg, 100%, 50%);
   border: 2px groove black;
-  padding: 15px;
+  padding: 10px;
   display: block;
   text-align: center;
 }
@@ -596,89 +293,10 @@ main .section .opinion2 p {
   font-weight: 400;
   color: white;
 }
-.main-label1 .login-contactus-forms-label .h2-form:after {
-  cursor: default;
-}
-.main-label1 .login-contactus-forms-label .agree {
+.main-label1 .login-contactus-forms-label p {
   color: white;
 }
 
-/*                                  LOGIN.HTML PAGE EDITION BELOW                                */
-.loginmain {
-  margin: 5% 0% 5% 0%;
-  text-align: center;
-}
-.loginmain h1 {
-  margin-bottom: 0%;
-  font-size: 1.5rem;
-  margin: 2% 0% 1% 0%;
-}
-.loginmain h1:hover {
-  cursor: default;
-}
-.loginmain p {
-  font-size: 1.2rem;
-  margin-top: 50px;
-}
-.loginmain p .userpass {
-  font-weight: 500;
-}
-
-.label1 {
-  display: flex;
-  justify-content: center;
-  margin: 2% 0%;
-}
-.label1 .loginform {
-  background-color: hsl(240deg, 100%, 50%);
-  border: 2px groove black;
-  padding: 15px;
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-.label1 .loginform .usernpass {
-  color: white;
-}
-
-.label2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.label2 h2 {
-  margin: 10px;
-  font-weight: 400;
-}
-.label2 a {
-  color: black;
-  font-size: 1.5rem;
-}
-.label2 a a:hover {
-  color: hsl(240deg, 100%, 50%);
-}
-
-@media only screen and (max-width: 766px) {
-  body {
-    font-size: 16px;
-  }
-
-  nav a {
-    font-size: 1.5rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1.5rem;
-  }
-
-  .label2 {
-    font-size: 1rem;
-  }
-}
-/*                                  FAQ.HTML PAGE EDITION BELOW                                */
 .header-label1 {
   justify-content: center;
   display: inline-flex;
@@ -756,7 +374,81 @@ ul li a {
     width: 100%;
   }
 }
-/*                                 CONTACTUS.HTML EDITION BELOW                                */
+/*                                  LOGIN.HTML PAGE EDITION BELOW                                */
+.loginmain {
+  margin: 5% 0% 5% 0%;
+  text-align: center;
+}
+.loginmain h1 {
+  margin-bottom: 0%;
+  font-size: 1.5rem;
+  margin: 2% 0% 1% 0%;
+}
+.loginmain h1:hover {
+  cursor: default;
+}
+.loginmain p {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+.loginmain p .userpass {
+  font-weight: 500;
+}
+
+.label1 {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0%;
+}
+.label1 .loginform {
+  background-color: hsl(240deg, 100%, 50%);
+  border: 2px groove black;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.label1 .loginform .usernpass {
+  color: white;
+}
+
+.label2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.label2 h2 {
+  margin: 10px;
+  font-weight: 400;
+}
+.label2 a {
+  color: black;
+  font-size: 1.5rem;
+}
+.label2 a a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 766px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  .label2 {
+    font-size: 1rem;
+  }
+}
 .header-label2 {
   display: flex;
   justify-content: center;
@@ -764,21 +456,29 @@ ul li a {
   margin: 2% 0% 1% 0%;
 }
 .header-label2 .header-label3 {
+  display: block;
   text-align: center;
 }
 .header-label2 .header-label3 h1 {
+  margin: 20px 10px 20px 10px;
   font-size: 1.5rem;
+}
+.header-label2 .header-label3 h1:hover {
+  cursor: default;
+}
+.header-label2 .header-label3 img {
+  width: 40px;
 }
 
 .main-label1 {
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: center;
 }
 .main-label1 .login-contactus-forms-label {
   background-color: hsl(240deg, 100%, 50%);
   border: 2px groove black;
-  padding: 15px;
+  padding: 10px;
   display: block;
   text-align: center;
 }
@@ -787,29 +487,411 @@ ul li a {
   font-weight: 400;
   color: white;
 }
-.main-label1 .login-contactus-forms-label p {
+.main-label1 .login-contactus-forms-label .h2-form:after {
+  cursor: default;
+}
+.main-label1 .login-contactus-forms-label .agree {
   color: white;
 }
 
-.socialmedia img {
-  display: inlineblock;
+/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
+.navigation-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-label1 .mainmenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  min-width: 70%;
+}
+.navigation-label1 .mainmenu li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10%;
+}
+.navigation-label1 .mainmenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.navigation-label1 .mainmenu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.navigation-label1 .mainmenu li a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+.navigation-label1 .mainmenu li .logo {
+  width: 50px;
+}
+
+.mainmenu-2 {
+  text-align: center;
+  display: inline-flex;
+  margin-right: 20px;
+}
+.mainmenu-2 .pesquisar-label {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.mainmenu-2 .pesquisar-label:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+}
+
+.mainmenu-2 .pesquisar-label:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 426px) {
+  .navigation-label1 {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .navigation-label1 .mainmenu {
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .navigation-label1 .mainmenu li {
+    margin: 0;
+  }
+  .navigation-label1 .mainmenu .logo {
+    display: none;
+  }
+}
+.mainmenu-2 {
+  display: block;
+  text-align: center;
+}
+
+/* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
+.mainmenu1 {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.mainmenu1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+.mainmenu1 li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.mainmenu1 li a {
+  text-decoration: none;
+  color: black;
+}
+.mainmenu1 li a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+/* MAIN MENU OF THE CHECKOUT PAGE */
+.checkout-label1 {
+  background-color: hsl(240deg, 100%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-label1 .banner-label-checkout {
+  display: inline-flex;
+  align-items: center;
+}
+.checkout-label1 .banner-label-checkout .logo {
+  width: 50px;
+  margin: 20px;
+}
+.checkout-label1 .banner-label-checkout h1 {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px;
+  font-weight: 300;
+  padding: 10px;
+  color: white;
+}
+.checkout-label1 .banner-label-checkout h1:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: default;
+}
+.checkout-label1 .banner-label2-checkout {
+  display: inline-flex;
+  align-items: center;
+}
+.checkout-label1 .banner-label2-checkout h1 {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+.checkout-label1 .banner-label2-checkout h1:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: default;
+}
+.checkout-label1 .banner-label2-checkout a {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 100px;
+  transition: background-color 500ms linear, color 500ms linear;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.checkout-label1 .banner-label2-checkout a:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+
+/* FOOTER OF THE LOGIN, REGISTAR AND CONTACT US PAGES */
+.footer {
+  margin: 5% 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.footer .socialmedia img {
   height: 50px;
   padding: 0% 1%;
 }
 
-/*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
-.checkout-page {
-  display: flex;
+/* ----------------------------------------------------- */
+/* FOOTER OF THE PAGES INDEX.HTML AND ABOUTUS.HTML */
+.guarantees {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 3%;
 }
-.checkout-page .shipping-label {
-  width: 50%;
+.guarantees h4 {
+  text-align: center;
+  background-color: hsl(240deg, 100%, 20%);
+  color: white;
+  font-weight: 400;
+  padding: 30px;
+  font-size: 16px;
+  margin-right: 5%;
+  letter-spacing: 1px;
 }
-.checkout-page .shipping-label .shipping-headers h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  background-color: rgba(0, 0, 255, 0.5);
-  margin: 10px 0px;
+
+.submenu {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.submenu li {
+  list-style: none;
+  display: inline-block;
   padding: 10px;
+  margin-right: 10%;
+}
+.submenu li:hover {
+  border-bottom: 1px solid hsl(240deg, 100%, 50%);
+  color: hsl(240deg, 100%, 50%);
+}
+.submenu a {
+  text-decoration: none;
+  color: black;
+}
+.submenu a:hover {
+  color: hsl(240deg, 100%, 50%);
+}
+
+@media only screen and (max-width: 426px) {
+  .guarantees {
+    display: unset;
+  }
+  .guarantees .guarantees h4 {
+    text-align: left;
+  }
+}
+/*                                   INDEX.HTML PAGE EDITION BELOW                                */
+.banner {
+  background-image: url(../../assets/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.banner .banner-label {
+  width: 20%;
+  text-align: center;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.banner .banner-label:hover {
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  cursor: default;
+}
+.banner .banner-label h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.banner .banner-label h1:hover {
+  cursor: default;
+}
+.banner .banner-label a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px groove white;
+}
+.banner .banner-label a:hover {
+  padding: 10px 10px 10px 10px;
+}
+
+.discover-out-products {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+.discover-out-products h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 8% auto;
+}
+.products .product1-banner, .products .product2-banner, .products .product3-banner {
+  text-align: center;
+  flex: 1;
+}
+.products .product1-banner .product-button, .products .product2-banner .product-button, .products .product3-banner .product-button {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 25%;
+  transition: background-color 500ms linear, color 500ms linear;
+  text-decoration: none;
+}
+.products .product1-banner .product-button:hover, .products .product2-banner .product-button:hover, .products .product3-banner .product-button:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
+  margin-bottom: 50px;
+}
+
+.products-presentation-label {
+  display: flex;
+  flex-direction: column;
+}
+.products-presentation-label #product-1, .products-presentation-label #product-2, .products-presentation-label #product-3 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 30px auto;
+  background-color: #ffa500;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  transition: background-color 500ms linear;
+}
+.products-presentation-label #product-1:hover, .products-presentation-label #product-2:hover, .products-presentation-label #product-3:hover {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+.products-presentation-label #product-1 .Shop-button, .products-presentation-label #product-2 .Shop-button, .products-presentation-label #product-3 .Shop-button {
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px 30px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  width: 25%;
+  transition: background-color 500ms linear, color 500ms linear;
+  align-self: center;
+  text-decoration: none;
+}
+.products-presentation-label #product-1 .Shop-button:hover, .products-presentation-label #product-2 .Shop-button:hover, .products-presentation-label #product-3 .Shop-button:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
+
+@media only screen and (max-width: 426px) {
+  .banner {
+    min-height: 400px;
+    flex-direction: column;
+  }
+  .banner .banner-label {
+    display: block;
+    width: 80%;
+    height: 40%;
+  }
+
+  .discover-out-products {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+  .products .product1-banner, .products .product2-banner, .products .product3-banner {
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .products-presentation-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-presentation-label #product-1, .products-presentation-label #product-2, .products-presentation-label #product-3 {
+    width: 80%;
+    min-height: 300px;
+    justify-content: center;
+  }
+  .products-presentation-label #product-1 .Shop-button, .products-presentation-label #product-2 .Shop-button, .products-presentation-label #product-3 .Shop-button {
+    background-color: hsl(240deg, 100%, 50%);
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 10px 30px;
+    border: 1px solid hsl(240deg, 100%, 50%);
+    width: 50%;
+    padding: 10px 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

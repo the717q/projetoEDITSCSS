@@ -1,0 +1,75 @@
+/*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
+
+
+.checkout-page {
+    display:flex;
+      .shipping-label {
+        width: 50%;
+        .shipping-headers {
+            h2 {
+              text-transform: uppercase;
+              font-size: 1em;
+              background-color: $fadeout-blue;
+              margin: 10px 0px;
+              padding: 10px;
+          }
+        }
+        .checkout-page-form {
+          background-color: $lightblue;
+          padding: 10px 20px 10px 20px;
+          .shipping-adress, #payment, #delivery-contact, #submit {
+            margin: 40px 0px 40px 0px;
+            h3 {
+              font-size: 1em;
+              text-transform: uppercase;
+              font-weight: 700;
+                &:hover {
+                cursor:default;
+                }
+            }
+            .form-control-dif {
+              display:inline-block;
+              width: 49%;
+              padding: 10px;
+              border: 1px solid black;
+              border-radius: 2%;
+              margin-bottom: 20px;
+            }
+            .form-control {
+              width: 99%;
+              padding: 10px;
+              border: 1px solid black;
+              border-radius: 2%;
+              margin-bottom: 20px;
+            }
+            .form-phone-first-digits {
+              width: 20%;
+              padding: 10px;
+              border: 1px solid black;
+              border-radius: 2%;
+              margin-bottom: 20px;        
+            }
+            a {
+              @include button-details($blue, 100px, 0px);
+              @include buttons-hover($darkblue);
+              transition: background-color 500ms linear, color 500ms linear;
+              text-decoration: none;
+            }
+          }
+          #si-agree {
+            margin-bottom: 30px;
+          }
+
+          .submit-button {
+            @include button-details($blue, 150px, 0px);
+            @include buttons-hover($darkblue);
+            transition: background-color 500ms linear, color 500ms linear;
+            text-decoration: none;
+            margin-top: 20px;
+          }
+          }
+        }
+      }
+  
+  
+  
