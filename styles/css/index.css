@@ -177,9 +177,11 @@ main .section .opinion2 p {
 /*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
 .checkout-page {
   display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
 }
 .checkout-page .shipping-label {
-  width: 50%;
+  flex: 2;
 }
 .checkout-page .shipping-label .shipping-headers h2 {
   text-transform: uppercase;
@@ -188,22 +190,37 @@ main .section .opinion2 p {
   margin: 10px 0px;
   padding: 10px;
 }
+.checkout-page .shipping-label .shipping-headers h2:hover {
+  cursor: default;
+}
 .checkout-page .shipping-label .checkout-page-form {
   background-color: hsla(240deg, 100%, 80%, 0.6);
   padding: 10px 20px 10px 20px;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress, .checkout-page .shipping-label .checkout-page-form #payment, .checkout-page .shipping-label .checkout-page-form #delivery-contact, .checkout-page .shipping-label .checkout-page-form #submit {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress,
+.checkout-page .shipping-label .checkout-page-form #payment,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact,
+.checkout-page .shipping-label .checkout-page-form #submit {
   margin: 40px 0px 40px 0px;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress h3, .checkout-page .shipping-label .checkout-page-form #payment h3, .checkout-page .shipping-label .checkout-page-form #delivery-contact h3, .checkout-page .shipping-label .checkout-page-form #submit h3 {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress h3,
+.checkout-page .shipping-label .checkout-page-form #payment h3,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact h3,
+.checkout-page .shipping-label .checkout-page-form #submit h3 {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress h3:hover, .checkout-page .shipping-label .checkout-page-form #payment h3:hover, .checkout-page .shipping-label .checkout-page-form #delivery-contact h3:hover, .checkout-page .shipping-label .checkout-page-form #submit h3:hover {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress h3:hover,
+.checkout-page .shipping-label .checkout-page-form #payment h3:hover,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact h3:hover,
+.checkout-page .shipping-label .checkout-page-form #submit h3:hover {
   cursor: default;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control-dif, .checkout-page .shipping-label .checkout-page-form #payment .form-control-dif, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control-dif, .checkout-page .shipping-label .checkout-page-form #submit .form-control-dif {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control-dif,
+.checkout-page .shipping-label .checkout-page-form #payment .form-control-dif,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control-dif,
+.checkout-page .shipping-label .checkout-page-form #submit .form-control-dif {
   display: inline-block;
   width: 49%;
   padding: 10px;
@@ -211,21 +228,30 @@ main .section .opinion2 p {
   border-radius: 2%;
   margin-bottom: 20px;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control, .checkout-page .shipping-label .checkout-page-form #payment .form-control, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control, .checkout-page .shipping-label .checkout-page-form #submit .form-control {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-control,
+.checkout-page .shipping-label .checkout-page-form #payment .form-control,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact .form-control,
+.checkout-page .shipping-label .checkout-page-form #submit .form-control {
   width: 99%;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2%;
   margin-bottom: 20px;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #payment .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #delivery-contact .form-phone-first-digits, .checkout-page .shipping-label .checkout-page-form #submit .form-phone-first-digits {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress .form-phone-first-digits,
+.checkout-page .shipping-label .checkout-page-form #payment .form-phone-first-digits,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact .form-phone-first-digits,
+.checkout-page .shipping-label .checkout-page-form #submit .form-phone-first-digits {
   width: 20%;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2%;
   margin-bottom: 20px;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress a, .checkout-page .shipping-label .checkout-page-form #payment a, .checkout-page .shipping-label .checkout-page-form #delivery-contact a, .checkout-page .shipping-label .checkout-page-form #submit a {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress a,
+.checkout-page .shipping-label .checkout-page-form #payment a,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact a,
+.checkout-page .shipping-label .checkout-page-form #submit a {
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 0px;
@@ -237,11 +263,14 @@ main .section .opinion2 p {
   transition: background-color 500ms linear, color 500ms linear;
   text-decoration: none;
 }
-.checkout-page .shipping-label .checkout-page-form .shipping-adress a:hover, .checkout-page .shipping-label .checkout-page-form #payment a:hover, .checkout-page .shipping-label .checkout-page-form #delivery-contact a:hover, .checkout-page .shipping-label .checkout-page-form #submit a:hover {
+.checkout-page .shipping-label .checkout-page-form .shipping-adress a:hover,
+.checkout-page .shipping-label .checkout-page-form #payment a:hover,
+.checkout-page .shipping-label .checkout-page-form #delivery-contact a:hover,
+.checkout-page .shipping-label .checkout-page-form #submit a:hover {
   color: hsl(240deg, 100%, 20%);
   background-color: white;
 }
-.checkout-page .shipping-label .checkout-page-form #si-agree {
+.checkout-page .shipping-label .checkout-page-form #i-agree {
   margin-bottom: 30px;
 }
 .checkout-page .shipping-label .checkout-page-form .submit-button {
@@ -261,7 +290,134 @@ main .section .opinion2 p {
   color: hsl(240deg, 100%, 20%);
   background-color: white;
 }
+.checkout-page .order-summary {
+  flex: 1;
+}
+.checkout-page .order-summary .contact-us-checkout {
+  background-color: rgba(0, 0, 255, 0.5);
+  margin: 10px 0px;
+  padding: 10px;
+  text-align: center;
+}
+.checkout-page .order-summary .contact-us-checkout .contact-us {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+.checkout-page .order-summary .order-summary {
+  padding: 10px 20px 10px 20px;
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+}
+.checkout-page .order-summary .order-summary .contact-us-header h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.checkout-page .order-summary .order-summary .subtotal,
+.checkout-page .order-summary .order-summary .taxes,
+.checkout-page .order-summary .order-summary .shipping,
+.checkout-page .order-summary .order-summary .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout-page .order-summary .summary {
+  padding: 10px 20px 10px 20px;
+  background-color: hsla(240deg, 100%, 80%, 0.6);
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.checkout-page .order-summary .summary .bag-summary-header .summary-paragraph {
+  color: green;
+  font-weight: 700;
+}
+.checkout-page .order-summary .summary .bag-summary-header .summary-paragraph span {
+  color: black;
+}
+.checkout-page .order-summary .summary .item {
+  display: flex;
+  gap: 20px;
+}
+.checkout-page .order-summary .summary .item .image {
+  flex: 1;
+  background-image: url("../../assets/product1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+.checkout-page .order-summary .summary .item .product-details {
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1;
+}
+.checkout-page .order-summary .summary .item .product-details .edit-remove {
+  width: 50%;
+  text-align: center;
+  background-color: hsl(240deg, 100%, 50%);
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border: 1px solid hsl(240deg, 100%, 50%);
+  transition: background-color 500ms linear, color 500ms linear;
+  margin-top: 10px;
+}
+.checkout-page .order-summary .summary .item .product-details .edit-remove:hover {
+  color: hsl(240deg, 100%, 20%);
+  background-color: white;
+}
 
+/*                               TABLET VERSION CHECKOUT.HTML PAGE EDITION BELOW                                */
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .checkout-page .order-summary .summary {
+    display: block;
+    text-align: center;
+  }
+  .checkout-page .order-summary .summary .item {
+    display: block;
+  }
+  .checkout-page .order-summary .summary .item .image {
+    display: block;
+  }
+  .checkout-page .order-summary .summary .item .product-details {
+    display: block;
+  }
+  .checkout-page .order-summary .summary .item .product-details .edit-remove {
+    width: 50%;
+  }
+}
+/*                               MOBILE CHECKOUT.HTML PAGE EDITION BELOW                                */
+@media only screen and (max-width: 425px) {
+  .checkout-page {
+    display: block;
+  }
+  .checkout-page .order-summary .contact-us-checkout {
+    background-color: rgba(0, 0, 255, 0.5);
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+  }
+  .checkout-page .order-summary .order-summary {
+    padding: 10px 20px 10px 20px;
+    background-color: hsla(240deg, 100%, 80%, 0.6);
+  }
+  .checkout-page .order-summary .summary {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .checkout-page .order-summary .summary .item {
+    display: block;
+    text-align: center;
+  }
+  .checkout-page .order-summary .summary .item .product-details {
+    display: block;
+  }
+}
 /*                                 CONTACTUS.HTML EDITION BELOW                                */
 .header-label2 {
   display: flex;
@@ -274,6 +430,9 @@ main .section .opinion2 p {
 }
 .header-label2 .header-label3 h1 {
   font-size: 1.5rem;
+}
+.header-label2 .header-label3 .contact-us-image {
+  width: 40px;
 }
 
 .main-label1 {
@@ -494,7 +653,7 @@ ul li a {
   color: white;
 }
 
-/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
+/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML, CHECKOUTPAGE.HTML*/
 .navigation-label1 {
   display: flex;
   align-items: center;
@@ -661,6 +820,27 @@ ul li a {
   background-color: white;
 }
 
+@media only screen and (max-width: 425px) {
+  .checkout-label1 {
+    background-color: hsl(240deg, 100%, 50%);
+    display: block;
+  }
+  .checkout-label1 .banner-label-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkout-label1 .banner-label-checkout h1 {
+    font-size: 14px;
+  }
+  .checkout-label1 .banner-label2-checkout {
+    display: flex;
+    align-items: center;
+  }
+  .checkout-label1 .banner-label2-checkout h1 {
+    font-size: 14px;
+  }
+}
 /* FOOTER OF THE LOGIN, REGISTAR AND CONTACT US PAGES */
 .footer {
   margin: 5% 0%;
@@ -793,6 +973,9 @@ ul li a {
   text-align: center;
   flex: 1;
 }
+.products .product1-banner .product-image, .products .product2-banner .product-image, .products .product3-banner .product-image {
+  width: 50%;
+}
 .products .product1-banner .product-button, .products .product2-banner .product-button, .products .product3-banner .product-button {
   background-color: hsl(240deg, 100%, 50%);
   color: white;
@@ -830,6 +1013,10 @@ ul li a {
 }
 .products-presentation-label #product-1:hover, .products-presentation-label #product-2:hover, .products-presentation-label #product-3:hover {
   background-color: rgba(255, 165, 0, 0.8);
+}
+.products-presentation-label #product-1 .product-image, .products-presentation-label #product-2 .product-image, .products-presentation-label #product-3 .product-image {
+  width: 50%;
+  align-self: center;
 }
 .products-presentation-label #product-1 .Shop-button, .products-presentation-label #product-2 .Shop-button, .products-presentation-label #product-3 .Shop-button {
   background-color: hsl(240deg, 100%, 50%);
