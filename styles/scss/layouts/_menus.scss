@@ -1,4 +1,4 @@
-/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML */
+/* MAIN MENU OF THE PAGES INDEX, ABOUTUS, FAQ.HTML, CHECKOUTPAGE.HTML*/
 
 .navigation-label1 {
   display: flex;
@@ -166,6 +166,30 @@
     transition: background-color 500ms linear, color 500ms linear;
     margin-right: 10px;
     text-decoration: none;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .checkout-label1 {
+    background-color: $blue;
+    display: block;
+    .banner-label-checkout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 14px;
+      }
+    }
+
+    .banner-label2-checkout {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 14px;
+      }
     }
   }
 }

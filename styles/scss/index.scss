@@ -94,7 +94,9 @@
     .product1-banner, .product2-banner, .product3-banner {
       text-align: center;
       flex: 1;
-
+      .product-image {
+        width: 50%;
+      }
       .product-button {
         @include button-details($blue, 25%, 20px);
         transition: background-color 500ms linear, color 500ms linear;
@@ -127,6 +129,10 @@
       transition: background-color 500ms linear;
         &:hover {
           background-color: $fadeout-orange;
+        }
+        .product-image {
+          width: 50%;
+          align-self: center;
         }
 
       .Shop-button {
