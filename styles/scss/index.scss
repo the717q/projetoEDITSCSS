@@ -1,13 +1,12 @@
 // Imported Pages to be compiled from the main SCSS file to CSS
 
-
-// Resets, Mixins and variables 
+// Resets, Mixins and variables
 
 @import "helpers/resets.scss";
 @import "helpers/variables.scss";
 @import "helpers/mixins";
 
-//Imported Pages 
+//Imported Pages
 
 @import "pages/aboutus";
 @import "pages/checkout.scss";
@@ -16,18 +15,13 @@
 @import "pages/login.scss";
 @import "pages/registar.scss";
 
-
 // Imported Layouts
 
 @import "layouts/menus";
 @import "layouts/footer";
 
-
-
-
-
 /*                                   INDEX.HTML PAGE EDITION BELOW                                */
-  
+
 .banner {
   background-image: url(../../assets/header.jpg);
   background-size: cover;
@@ -38,42 +32,45 @@
   align-items: center;
   height: 300px;
 
+  @media (max-width: 426px) {
+    min-height: 400px;
+    flex-direction: column;
+  }
+
   .banner-label {
-    width: 20%;
+    min-width: 250px;
+    min-height: 150px;
     text-align: center;
-    height: 50%;
     border: 1px solid white;
     border-radius: 10px;
-          &:hover {
-          background-color: #00000094;
-          cursor: default;
+
+    &:hover {
+      background-color: #00000094;
+      cursor: default;
     }
 
-      h1 {
-        color: white;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-          &:hover {
-          cursor: default;
-        }
+    h1 {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      &:hover {
+        cursor: default;
+      }
     }
 
-      a {
-        color: white;
-        text-decoration: none;
-        padding: 5px 10px 5px 10px;
-        border-radius: 10px;
-        letter-spacing: 2px;
-        border: 2px groove white;
-          &:hover {
-          padding: 10px 10px 10px 10px
-          }
-        }
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px 5px 10px;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      border: 2px groove white;
+      &:hover {
+        padding: 10px 10px 10px 10px;
+      }
     }
+  }
 }
-
-
-
 
 .discover-out-products {
   text-align: center;
@@ -84,111 +81,97 @@
   }
 }
 
-
 .products {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin: 8% auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 8% auto;
 
-    .product1-banner, .product2-banner, .product3-banner {
-      text-align: center;
-      flex: 1;
-      .product-image {
-        width: 50%;
-      }
-      .product-button {
-        @include button-details($blue, 25%, 20px);
-        transition: background-color 500ms linear, color 500ms linear;
-        text-decoration: none;
-        @include buttons-hover($darkblue)
-      }
+  .product1-banner,
+  .product2-banner,
+  .product3-banner {
+    text-align: center;
+    margin-bottom: 30px;
 
-      .producth2 {
-        margin-bottom: 50px;
-      }
+    @media (min-width: 723px) {
+      max-width: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
     }
+
+    @media (min-width: 1023px) {
+      max-width: 33.33%;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+    .product-button {
+      @include button-details($blue, 20px);
+      transition: background-color 500ms linear, color 500ms linear;
+      text-decoration: none;
+      @include buttons-hover($darkblue);
+    }
+
+    .producth2 {
+      margin-bottom: 50px;
+    }
+  }
 }
-
-
-
 
 .products-presentation-label {
   display: flex;
   flex-direction: column;
 
-    #product-1, #product-2, #product-3 {
-      text-align: center;
+  #product-1,
+  #product-2,
+  #product-3 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 30px auto;
+    background-color: $orange;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: background-color 500ms linear;
+    &:hover {
+      background-color: $fadeout-orange;
+    }
+    .product-image {
       width: 50%;
-      margin: 0 auto 30px auto;
-      background-color: $orange;
-      padding: 2% 5% 2% 5%;;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      transition: background-color 500ms linear;
-        &:hover {
-          background-color: $fadeout-orange;
-        }
-        .product-image {
-          width: 50%;
-          align-self: center;
-        }
+      align-self: center;
+    }
 
-      .Shop-button {
-        @include button-details($blue, 25%, 20px);
-        transition: background-color 500ms linear, color 500ms linear;
-        align-self: center;
-        text-decoration: none;
-        @include buttons-hover($darkblue);
-        }
-      }   
+    .Shop-button {
+      @include button-details($blue, 20px);
+      transition: background-color 500ms linear, color 500ms linear;
+      align-self: center;
+      text-decoration: none;
+      @include buttons-hover($darkblue);
+    }
+  }
 }
 
-
 @media only screen and (max-width: 426px) {
-
-
-  .banner {
-      min-height: 400px;
-      flex-direction: column;
-      .banner-label{
-        display: block;
-        width: 80%;
-        height: 40%;
-      }
-  }
-
-  .discover-out-products  {
+  .discover-out-products {
     margin: 50px 0px 50px 0px;
   }
 
-  .products {
+  .products-presentation-label {
+    display: flex;
     flex-direction: column;
 
-  .product1-banner, .product2-banner, .product3-banner {
-    text-align: center;
-    min-height: 300px;
-  }
-}
-
-
-.products-presentation-label {
-  display: flex;
-  flex-direction: column;
-
-    #product-1, #product-2, #product-3 {
-         width: 80%;
-         min-height: 300px;
-        justify-content: center;
-    .Shop-button {
-      @include button-details($blue, 50%, 20px);
+    #product-1,
+    #product-2,
+    #product-3 {
+      width: 80%;
+      min-height: 300px;
+      justify-content: center;
+      .Shop-button {
+        @include button-details($blue, 20px);
         padding: 10px 10px;
       }
     }
   }
-
 }
-
-
-

@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* Borders and margin of the body content of the html pages */
 body {
   font-size: 16px;
-  margin: 10px 10px 10px 10px;
 }
 
 /* Major colors used on the project */
@@ -252,6 +252,7 @@ main .section .opinion2 p {
 .checkout-page .shipping-label .checkout-page-form #payment a,
 .checkout-page .shipping-label .checkout-page-form #delivery-contact a,
 .checkout-page .shipping-label .checkout-page-form #submit a {
+  display: inline-block;
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 0px;
@@ -259,7 +260,6 @@ main .section .opinion2 p {
   font-size: 0.8rem;
   padding: 10px 30px;
   border: 1px solid hsl(240deg, 100%, 50%);
-  width: 100px;
   transition: background-color 500ms linear, color 500ms linear;
   text-decoration: none;
 }
@@ -274,6 +274,7 @@ main .section .opinion2 p {
   margin-bottom: 30px;
 }
 .checkout-page .shipping-label .checkout-page-form .submit-button {
+  display: inline-block;
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 0px;
@@ -281,7 +282,6 @@ main .section .opinion2 p {
   font-size: 0.8rem;
   padding: 10px 30px;
   border: 1px solid hsl(240deg, 100%, 50%);
-  width: 150px;
   transition: background-color 500ms linear, color 500ms linear;
   text-decoration: none;
   margin-top: 20px;
@@ -658,6 +658,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 74px;
 }
 .navigation-label1 .mainmenu {
   justify-content: center;
@@ -803,6 +804,7 @@ ul li a {
   cursor: default;
 }
 .checkout-label1 .banner-label2-checkout a {
+  display: inline-block;
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 0px;
@@ -810,7 +812,6 @@ ul li a {
   font-size: 0.8rem;
   padding: 10px 30px;
   border: 1px solid hsl(240deg, 100%, 50%);
-  width: 100px;
   transition: background-color 500ms linear, color 500ms linear;
   margin-right: 10px;
   text-decoration: none;
@@ -923,10 +924,16 @@ ul li a {
   align-items: center;
   height: 300px;
 }
+@media (max-width: 426px) {
+  .banner {
+    min-height: 400px;
+    flex-direction: column;
+  }
+}
 .banner .banner-label {
-  width: 20%;
+  min-width: 250px;
+  min-height: 150px;
   text-align: center;
-  height: 50%;
   border: 1px solid white;
   border-radius: 10px;
 }
@@ -965,18 +972,41 @@ ul li a {
 
 .products {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   height: auto;
   margin: 8% auto;
 }
-.products .product1-banner, .products .product2-banner, .products .product3-banner {
+.products .product1-banner,
+.products .product2-banner,
+.products .product3-banner {
   text-align: center;
-  flex: 1;
+  margin-bottom: 30px;
 }
-.products .product1-banner .product-image, .products .product2-banner .product-image, .products .product3-banner .product-image {
-  width: 50%;
+@media (min-width: 723px) {
+  .products .product1-banner,
+.products .product2-banner,
+.products .product3-banner {
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
-.products .product1-banner .product-button, .products .product2-banner .product-button, .products .product3-banner .product-button {
+@media (min-width: 1023px) {
+  .products .product1-banner,
+.products .product2-banner,
+.products .product3-banner {
+    max-width: 33.33%;
+  }
+}
+.products .product1-banner .product-image,
+.products .product2-banner .product-image,
+.products .product3-banner .product-image {
+  width: 100%;
+}
+.products .product1-banner .product-button,
+.products .product2-banner .product-button,
+.products .product3-banner .product-button {
+  display: inline-block;
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
@@ -984,15 +1014,18 @@ ul li a {
   font-size: 0.8rem;
   padding: 10px 30px;
   border: 1px solid hsl(240deg, 100%, 50%);
-  width: 25%;
   transition: background-color 500ms linear, color 500ms linear;
   text-decoration: none;
 }
-.products .product1-banner .product-button:hover, .products .product2-banner .product-button:hover, .products .product3-banner .product-button:hover {
+.products .product1-banner .product-button:hover,
+.products .product2-banner .product-button:hover,
+.products .product3-banner .product-button:hover {
   color: hsl(240deg, 100%, 20%);
   background-color: white;
 }
-.products .product1-banner .producth2, .products .product2-banner .producth2, .products .product3-banner .producth2 {
+.products .product1-banner .producth2,
+.products .product2-banner .producth2,
+.products .product3-banner .producth2 {
   margin-bottom: 50px;
 }
 
@@ -1000,7 +1033,9 @@ ul li a {
   display: flex;
   flex-direction: column;
 }
-.products-presentation-label #product-1, .products-presentation-label #product-2, .products-presentation-label #product-3 {
+.products-presentation-label #product-1,
+.products-presentation-label #product-2,
+.products-presentation-label #product-3 {
   text-align: center;
   width: 50%;
   margin: 0 auto 30px auto;
@@ -1011,14 +1046,21 @@ ul li a {
   align-content: center;
   transition: background-color 500ms linear;
 }
-.products-presentation-label #product-1:hover, .products-presentation-label #product-2:hover, .products-presentation-label #product-3:hover {
+.products-presentation-label #product-1:hover,
+.products-presentation-label #product-2:hover,
+.products-presentation-label #product-3:hover {
   background-color: rgba(255, 165, 0, 0.8);
 }
-.products-presentation-label #product-1 .product-image, .products-presentation-label #product-2 .product-image, .products-presentation-label #product-3 .product-image {
+.products-presentation-label #product-1 .product-image,
+.products-presentation-label #product-2 .product-image,
+.products-presentation-label #product-3 .product-image {
   width: 50%;
   align-self: center;
 }
-.products-presentation-label #product-1 .Shop-button, .products-presentation-label #product-2 .Shop-button, .products-presentation-label #product-3 .Shop-button {
+.products-presentation-label #product-1 .Shop-button,
+.products-presentation-label #product-2 .Shop-button,
+.products-presentation-label #product-3 .Shop-button {
+  display: inline-block;
   background-color: hsl(240deg, 100%, 50%);
   color: white;
   border-radius: 20px;
@@ -1026,49 +1068,37 @@ ul li a {
   font-size: 0.8rem;
   padding: 10px 30px;
   border: 1px solid hsl(240deg, 100%, 50%);
-  width: 25%;
   transition: background-color 500ms linear, color 500ms linear;
   align-self: center;
   text-decoration: none;
 }
-.products-presentation-label #product-1 .Shop-button:hover, .products-presentation-label #product-2 .Shop-button:hover, .products-presentation-label #product-3 .Shop-button:hover {
+.products-presentation-label #product-1 .Shop-button:hover,
+.products-presentation-label #product-2 .Shop-button:hover,
+.products-presentation-label #product-3 .Shop-button:hover {
   color: hsl(240deg, 100%, 20%);
   background-color: white;
 }
 
 @media only screen and (max-width: 426px) {
-  .banner {
-    min-height: 400px;
-    flex-direction: column;
-  }
-  .banner .banner-label {
-    display: block;
-    width: 80%;
-    height: 40%;
-  }
-
   .discover-out-products {
     margin: 50px 0px 50px 0px;
-  }
-
-  .products {
-    flex-direction: column;
-  }
-  .products .product1-banner, .products .product2-banner, .products .product3-banner {
-    text-align: center;
-    min-height: 300px;
   }
 
   .products-presentation-label {
     display: flex;
     flex-direction: column;
   }
-  .products-presentation-label #product-1, .products-presentation-label #product-2, .products-presentation-label #product-3 {
+  .products-presentation-label #product-1,
+.products-presentation-label #product-2,
+.products-presentation-label #product-3 {
     width: 80%;
     min-height: 300px;
     justify-content: center;
   }
-  .products-presentation-label #product-1 .Shop-button, .products-presentation-label #product-2 .Shop-button, .products-presentation-label #product-3 .Shop-button {
+  .products-presentation-label #product-1 .Shop-button,
+.products-presentation-label #product-2 .Shop-button,
+.products-presentation-label #product-3 .Shop-button {
+    display: inline-block;
     background-color: hsl(240deg, 100%, 50%);
     color: white;
     border-radius: 20px;
@@ -1076,7 +1106,6 @@ ul li a {
     font-size: 0.8rem;
     padding: 10px 30px;
     border: 1px solid hsl(240deg, 100%, 50%);
-    width: 50%;
     padding: 10px 10px;
   }
 }
