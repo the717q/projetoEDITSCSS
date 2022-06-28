@@ -1,6 +1,5 @@
 /*                                 CHECKOUT.HTML PAGE EDITION BELOW                                */
 
-
 .checkout-page {
   display: flex;
   gap: 10px;
@@ -69,7 +68,7 @@
         }
 
         a {
-          @include button-details($blue, 100px, 0px);
+          @include button-details($blue, 0px);
           @include buttons-hover($darkblue);
           transition: background-color 500ms linear, color 500ms linear;
           text-decoration: none;
@@ -81,7 +80,7 @@
       }
 
       .submit-button {
-        @include button-details($blue, 150px, 0px);
+        @include button-details($blue, 0px);
         @include buttons-hover($darkblue);
         transition: background-color 500ms linear, color 500ms linear;
         text-decoration: none;
@@ -152,52 +151,50 @@
         gap: 20px;
         .image {
           flex: 1;
-          background-image: url('../../assets/product1.jpg');
+          background-image: url("../../assets/product1.jpg");
           background-position: center;
           background-size: cover;
           height: 200px;
         }
         .product-details {
-          display:inline-flex;
+          display: inline-flex;
           flex-direction: column;
           flex: 1;
-            .edit-remove {
-              width: 50%;
-              text-align: center;
-              background-color: hsl(240deg, 100%, 50%);
-              color: white;
-              border-radius: 10px;
-              text-transform: uppercase;
-              font-size: 0.8em;
-              padding: 5px 10px;
-              border: 1px solid hsl(240deg, 100%, 50%);
-              transition: background-color 500ms linear, color 500ms linear;
-              margin-top: 10px;
-              @include buttons-hover($darkblue);
-            }
+          .edit-remove {
+            width: 50%;
+            text-align: center;
+            background-color: hsl(240deg, 100%, 50%);
+            color: white;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            padding: 5px 10px;
+            border: 1px solid hsl(240deg, 100%, 50%);
+            transition: background-color 500ms linear, color 500ms linear;
+            margin-top: 10px;
+            @include buttons-hover($darkblue);
           }
         }
       }
     }
   }
-
+}
 
 /*                               TABLET VERSION CHECKOUT.HTML PAGE EDITION BELOW                                */
 
-
-  @media only screen and (max-width: 1023px) and (min-width: 426px) {
-    .checkout-page {
-      .order-summary {
-        .summary {
-         display: block;
-         text-align: center;
-          .item {
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .checkout-page {
+    .order-summary {
+      .summary {
+        display: block;
+        text-align: center;
+        .item {
+          display: block;
+          .image {
             display: block;
-            .image {
-               display: block;
-              }
-        .product-details {
-          display:block;
+          }
+          .product-details {
+            display: block;
             .edit-remove {
               width: 50%;
             }
@@ -208,42 +205,36 @@
   }
 }
 
-
-
 /*                               MOBILE CHECKOUT.HTML PAGE EDITION BELOW                                */
 
-
-
-@media only screen and (max-width: 425px) {          
-
-.checkout-page {
-  display: block;
-
-  .order-summary {
-
-    .contact-us-checkout {
-      background-color: rgba(0, 0, 255, 0.5);
-      margin: 10px 0px;
-      padding: 10px;
-      text-align: center;
-    }
+@media only screen and (max-width: 425px) {
+  .checkout-page {
+    display: block;
 
     .order-summary {
-      padding: 10px 20px 10px 20px;
-      background-color: hsla(240deg, 100%, 80%, 0.6);
-    }
-    .summary {
-      display: block;
-      text-align: center;
-      padding-bottom: 20px;
-      .item {
-        display:block;
+      .contact-us-checkout {
+        background-color: rgba(0, 0, 255, 0.5);
+        margin: 10px 0px;
+        padding: 10px;
         text-align: center;
-        .product-details {
-          display:block;
+      }
+
+      .order-summary {
+        padding: 10px 20px 10px 20px;
+        background-color: hsla(240deg, 100%, 80%, 0.6);
+      }
+      .summary {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+        .item {
+          display: block;
+          text-align: center;
+          .product-details {
+            display: block;
           }
-       }
+        }
+      }
     }
-   }
   }
 }
