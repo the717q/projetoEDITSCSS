@@ -14,6 +14,7 @@ body {
 /* Forms */
 /*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
 main .header {
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +25,7 @@ main .header {
 }
 main .header .block {
   display: block;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 main .header .block h1 {
@@ -88,8 +89,10 @@ main .section .opinion1 {
 main .section .opinion1 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
+  margin: 10px;
 }
 main .section .opinion1 h3 {
+  margin: 10px;
   color: hsl(0deg, 100%, 100%);
 }
 main .section .opinion1 h3 span {
@@ -103,6 +106,7 @@ main .section .opinion1 .opinionimg p {
   line-height: 30px;
   color: white;
   padding: 0px 20px;
+  margin: 10px;
 }
 main .section .opinion2 {
   background-color: hsla(240deg, 100%, 80%, 0.6);
@@ -119,8 +123,10 @@ main .section .opinion2 {
 main .section .opinion2 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
+  margin: 10px;
 }
 main .section .opinion2 h3 {
+  margin: 10px;
   color: hsl(0deg, 100%, 100%);
 }
 main .section .opinion2 h3 span {
@@ -147,7 +153,7 @@ main .section .opinion2 p {
 @media only screen and (max-width: 425px) {
   main .header .block {
     display: block;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 
@@ -874,7 +880,7 @@ ul li a {
   font-weight: 400;
   padding: 30px;
   font-size: 16px;
-  margin-right: 5%;
+  margin: 5%;
   letter-spacing: 1px;
 }
 
@@ -924,14 +930,16 @@ ul li a {
   height: 300px;
 }
 .banner .banner-label {
+  height: 50%;
   width: 20%;
   text-align: center;
-  height: 50%;
-  border: 1px solid white;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5137254902);
+  cursor: default;
+  flex-direction: column;
+  justify-content: center;
 }
 .banner .banner-label:hover {
-  background-color: rgba(0, 0, 0, 0.5803921569);
+  background-color: rgba(57, 42, 42, 0.51);
   cursor: default;
 }
 .banner .banner-label h1 {
