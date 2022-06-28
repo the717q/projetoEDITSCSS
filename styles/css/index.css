@@ -14,6 +14,7 @@ body {
 /* Forms */
 /*                                  ABOUTUS.HTML PAGE EDITION BELOW                                */
 main .header {
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +25,7 @@ main .header {
 }
 main .header .block {
   display: block;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 main .header .block h1 {
@@ -144,10 +145,10 @@ main .section .opinion2 p {
 }
 
 /* Mobile Media Query */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   main .header .block {
     display: block;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 
@@ -642,6 +643,7 @@ ul li a {
   text-align: center;
 }
 .main-label1 .login-contactus-forms-label .h2-form {
+  margin: 20px;
   font-size: 1.5rem;
   font-weight: 400;
   color: white;
@@ -710,7 +712,7 @@ ul li a {
 @media only screen and (max-width: 426px) {
   .navigation-label1 {
     display: block;
-    margin-bottom: 20px;
+    margin: 20px;
   }
   .navigation-label1 .mainmenu {
     display: flex;
@@ -728,6 +730,9 @@ ul li a {
 .mainmenu-2 {
   display: block;
   text-align: center;
+}
+.mainmenu-2 #pesquisar {
+  border: 2px solid black;
 }
 
 /* MAIN MENU OF THE PAGES CONTACTUS.HTML, REGISTAR.HTML, LOGIN.HTML */
@@ -852,6 +857,7 @@ ul li a {
   margin-top: 50px;
 }
 .footer h2 {
+  margin: 10px;
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -866,7 +872,6 @@ ul li a {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  margin-bottom: 3%;
 }
 .guarantees h4 {
   text-align: center;
@@ -875,7 +880,7 @@ ul li a {
   font-weight: 400;
   padding: 30px;
   font-size: 16px;
-  margin-right: 5%;
+  margin: 5%;
   letter-spacing: 1px;
 }
 
@@ -1031,7 +1036,7 @@ ul li a {
 .products .product1-banner .producth2,
 .products .product2-banner .producth2,
 .products .product3-banner .producth2 {
-  margin-bottom: 50px;
+  margin: 30px;
 }
 
 .products-presentation-label {
@@ -1055,6 +1060,13 @@ ul li a {
 .products-presentation-label #product-2:hover,
 .products-presentation-label #product-3:hover {
   background-color: rgba(255, 165, 0, 0.8);
+}
+.products-presentation-label #product-1 h3, .products-presentation-label #product-1 p,
+.products-presentation-label #product-2 h3,
+.products-presentation-label #product-2 p,
+.products-presentation-label #product-3 h3,
+.products-presentation-label #product-3 p {
+  margin: 10px;
 }
 .products-presentation-label #product-1 .product-image,
 .products-presentation-label #product-2 .product-image,

@@ -9,6 +9,7 @@
   text-align: center;
   margin-top: 50px;
     h2 {
+      margin: 10px;
       font-weight: 600;
       font-size: 1.5rem;
     }
@@ -28,7 +29,6 @@
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  margin-bottom: 3%;
     h4 {
       text-align: center;
       background-color: $darkblue;
@@ -36,7 +36,7 @@
       font-weight: 400;
       padding: 30px;
       font-size: 16px;
-      margin-right: 5%;
+      margin: 5%;
       letter-spacing: 1px;
     }
 }

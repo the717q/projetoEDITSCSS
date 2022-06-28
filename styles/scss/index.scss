@@ -119,7 +119,7 @@
     }
 
     .producth2 {
-      margin-bottom: 50px;
+      margin: 30px;
     }
   }
 }
@@ -143,6 +143,9 @@
     &:hover {
       background-color: $fadeout-orange;
     }
+    h3, p {
+      margin: 10px;
+    }
     .product-image {
       width: 50%;
       align-self: center;
@@ -162,6 +165,7 @@
   .discover-out-products {
     margin: 50px 0px 50px 0px;
   }
+  
 
   .products-presentation-label {
     display: flex;

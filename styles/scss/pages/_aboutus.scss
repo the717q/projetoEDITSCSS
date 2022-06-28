@@ -4,6 +4,7 @@
 
 main {
     .header {
+      padding: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,7 +14,7 @@ main {
       background-size: cover;
         .block {
           display: block;
-          width: 50%;
+          width: 80%;
           text-align: center;
             h1 {
               color: white;
@@ -140,10 +141,10 @@ main {
   
   /* Mobile Media Query */
   
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     main .header .block {
       display: block;
-      width: 80%;
+      width: 100%;
       text-align: center;
     }
     
