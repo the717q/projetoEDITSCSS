@@ -77,9 +77,11 @@ main {
             h2 {
               font-size: 36px;
               color: $darkblue;
+              margin: 10px;
             }
             h3 {
               color: hsl(0, 100%, 100%, 1);
+              margin: 10px;
               span {
                 color: $darkblue;
               }
@@ -90,7 +92,8 @@ main {
               p {
                 line-height: 30px;
                 color: white;
-                padding:0px 20px;
+                padding: 0px 20px;
+                margin: 10px;
               }
   }
   
@@ -110,9 +113,11 @@ main {
                 h2 {
                 font-size: 36px;
                 color: $darkblue;
+                margin: 10px;
               }
                 h3 {
                 color: hsl(0, 100%, 100%, 1);
+                margin: 10px;
                   span {
                     color: $darkblue;
                 }
@@ -125,6 +130,7 @@ main {
                 line-height: 30px;
                 color: white;
                 padding:0px 20px;
+                margin: 10px;
               }
           }
         }

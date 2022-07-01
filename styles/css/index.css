@@ -89,9 +89,11 @@ main .section .opinion1 {
 main .section .opinion1 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
+  margin: 10px;
 }
 main .section .opinion1 h3 {
   color: hsl(0deg, 100%, 100%);
+  margin: 10px;
 }
 main .section .opinion1 h3 span {
   color: hsl(240deg, 100%, 20%);
@@ -104,6 +106,7 @@ main .section .opinion1 .opinionimg p {
   line-height: 30px;
   color: white;
   padding: 0px 20px;
+  margin: 10px;
 }
 main .section .opinion2 {
   background-color: hsla(240deg, 100%, 80%, 0.6);
@@ -120,9 +123,11 @@ main .section .opinion2 {
 main .section .opinion2 h2 {
   font-size: 36px;
   color: hsl(240deg, 100%, 20%);
+  margin: 10px;
 }
 main .section .opinion2 h3 {
   color: hsl(0deg, 100%, 100%);
+  margin: 10px;
 }
 main .section .opinion2 h3 span {
   color: hsl(240deg, 100%, 20%);
@@ -135,6 +140,7 @@ main .section .opinion2 p {
   line-height: 30px;
   color: white;
   padding: 0px 20px;
+  margin: 10px;
 }
 
 .opinion1 p,
